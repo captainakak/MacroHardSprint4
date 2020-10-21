@@ -1,0 +1,252 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.npdevs.healthcastle"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+8-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml
+10
+11    <uses-feature
+11-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:5:5-7:35
+12        android:name="android.hardware.sensor.stepcounter"
+12-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:6:9-59
+13        android:required="true" />
+13-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:7:9-32
+14
+15    <uses-permission android:name="android.permission.WAKE_LOCK" />
+15-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:9:5-68
+15-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:9:22-65
+16    <uses-permission android:name="android.permission.CAMERA" />
+16-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:10:5-65
+16-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:10:22-62
+17    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+17-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:11:5-79
+17-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:11:22-76
+18    <uses-permission android:name="android.hardware.sensor.stepcounter" />
+18-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:12:5-75
+18-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:12:22-72
+19    <uses-permission android:name="android.hardware.sensor.stepdetector" />
+19-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:13:5-76
+19-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:13:22-73
+20    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+20-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:14:5-81
+20-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:14:22-78
+21    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+21-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:15:5-80
+21-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:15:22-77
+22
+23    <uses-feature
+23-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:17:5-19:35
+24        android:name="android.hardware.camera"
+24-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:18:9-47
+25        android:required="true" />
+25-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:19:9-32
+26    <uses-feature
+26-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:20:5-22:35
+27        android:name="android.hardware.camera.flash"
+27-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:21:9-53
+28        android:required="true" />
+28-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:22:9-32
+29    <uses-feature android:name="android.hardware.camera.autofocus" />
+29-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:23:5-70
+29-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:23:19-67
+30
+31    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+31-->[com.google.firebase:firebase-database:16.0.4] C:\Users\Jingyi Li\.gradle\caches\transforms-2\files-2.1\eb5165dfa5ddaaaab5d15be96c40b679\jetified-firebase-database-16.0.4\AndroidManifest.xml:22:5-79
+31-->[com.google.firebase:firebase-database:16.0.4] C:\Users\Jingyi Li\.gradle\caches\transforms-2\files-2.1\eb5165dfa5ddaaaab5d15be96c40b679\jetified-firebase-database-16.0.4\AndroidManifest.xml:22:22-76
+32    <uses-permission android:name="android.permission.INTERNET" />
+32-->[com.google.firebase:firebase-database:16.0.4] C:\Users\Jingyi Li\.gradle\caches\transforms-2\files-2.1\eb5165dfa5ddaaaab5d15be96c40b679\jetified-firebase-database-16.0.4\AndroidManifest.xml:23:5-67
+32-->[com.google.firebase:firebase-database:16.0.4] C:\Users\Jingyi Li\.gradle\caches\transforms-2\files-2.1\eb5165dfa5ddaaaab5d15be96c40b679\jetified-firebase-database-16.0.4\AndroidManifest.xml:23:22-64
+33    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+34
+35    <application
+35-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:25:5-76:19
+36        android:allowBackup="true"
+36-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:26:9-35
+37        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+37-->[androidx.core:core:1.1.0] C:\Users\Jingyi Li\.gradle\caches\transforms-2\files-2.1\9b282167d5edf2ce15b1570bf9b055c0\core-1.1.0\AndroidManifest.xml:24:18-86
+38        android:debuggable="true"
+39        android:icon="@mipmap/ic_launcher"
+39-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:27:9-43
+40        android:label="@string/app_name"
+40-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:28:9-41
+41        android:roundIcon="@mipmap/ic_launcher_round"
+41-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:29:9-54
+42        android:supportsRtl="true"
+42-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:30:9-35
+43        android:testOnly="true"
+44        android:theme="@style/AppTheme" >
+44-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:31:9-40
+45        <activity android:name="com.npdevs.healthcastle.SplashScreen" >
+45-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:32:9-38:20
+45-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:32:19-47
+46            <intent-filter>
+46-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:33:13-37:29
+47                <action android:name="android.intent.action.MAIN" />
+47-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:34:17-69
+47-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:34:25-66
+48
+49                <category android:name="android.intent.category.LAUNCHER" />
+49-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:36:17-77
+49-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:36:27-74
+50            </intent-filter>
+51        </activity>
+52        <activity android:name="com.npdevs.healthcastle.Emotions" />
+52-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:39:9-46
+52-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:39:19-43
+53        <activity android:name="com.npdevs.healthcastle.SugarLevelGraph" />
+53-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:40:9-53
+53-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:40:19-50
+54        <activity android:name="com.npdevs.healthcastle.BloodpressureMeasure" />
+54-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:41:9-58
+54-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:41:19-55
+55        <activity android:name="com.npdevs.healthcastle.SugarMeasure" />
+55-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:42:9-50
+55-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:42:19-47
+56        <activity android:name="com.npdevs.healthcastle.Friends" />
+56-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:43:9-45
+56-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:43:19-42
+57        <activity android:name="com.npdevs.healthcastle.Connections" />
+57-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:44:9-49
+57-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:44:19-46
+58        <activity android:name="com.npdevs.healthcastle.EditProfile" />
+58-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:45:9-49
+58-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:45:19-46
+59        <activity android:name="com.npdevs.healthcastle.PhoneSearch" />
+59-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:46:9-49
+59-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:46:19-46
+60        <activity android:name="com.npdevs.healthcastle.StepsGraph" />
+60-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:47:9-48
+60-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:47:19-45
+61        <activity android:name="com.npdevs.healthcastle.CalorieGraph" />
+61-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:48:9-50
+61-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:48:19-47
+62        <activity android:name="com.npdevs.healthcastle.AddNewExercise" />
+62-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:49:9-52
+62-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:49:19-49
+63        <activity android:name="com.npdevs.healthcastle.AddNewFood" />
+63-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:50:9-48
+63-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:50:19-45
+64        <activity android:name="com.npdevs.healthcastle.CheckSafeSearch" />
+64-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:51:9-53
+64-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:51:19-50
+65        <activity android:name="com.npdevs.healthcastle.AddFoodSearch" />
+65-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:52:9-51
+65-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:52:19-48
+66        <activity android:name="com.npdevs.healthcastle.AddFood" />
+66-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:53:9-45
+66-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:53:19-42
+67        <activity android:name="com.npdevs.healthcastle.AddExerciseSearch" />
+67-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:54:9-55
+67-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:54:19-52
+68        <activity android:name="com.npdevs.healthcastle.AddExercise" />
+68-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:55:9-49
+68-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:55:19-46
+69        <activity android:name="com.npdevs.healthcastle.HeartGraph" />
+69-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:56:9-48
+69-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:56:19-45
+70        <activity android:name="com.npdevs.healthcastle.About" />
+70-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:57:9-43
+70-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:57:19-40
+71        <activity android:name="com.npdevs.healthcastle.CheckSafe" />
+71-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:58:9-47
+71-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:58:19-44
+72        <activity android:name="com.npdevs.healthcastle.HeartMeter" />
+72-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:59:9-48
+72-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:59:19-45
+73        <activity android:name="com.npdevs.healthcastle.FrontActivity" />
+73-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:60:9-51
+73-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:60:19-48
+74        <activity android:name="com.npdevs.healthcastle.SignUp" />
+74-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:61:9-44
+74-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:61:19-41
+75        <activity android:name="com.npdevs.healthcastle.MainActivity" />
+75-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:62:9-59
+75-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:62:19-47
+76
+77        <receiver
+77-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:64:9-66:41
+78            android:name="com.npdevs.healthcastle.AlarmReciever"
+78-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:65:13-42
+79            android:process=":remote" />
+79-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:66:13-38
+80        <receiver android:name="com.npdevs.healthcastle.BootWakeUp" >
+80-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:67:9-71:20
+80-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:67:19-45
+81            <intent-filter>
+81-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:68:13-70:29
+82                <action android:name="android.intent.action.BOOT_COMPLETED" />
+82-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:69:17-79
+82-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:69:25-76
+83            </intent-filter>
+84        </receiver>
+85
+86        <service
+86-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:73:9-75:40
+87            android:name="com.npdevs.healthcastle.push_notification"
+87-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:74:13-46
+88            android:exported="false" />
+88-->C:\Users\Jingyi Li\CS8803MAS\HealthCastle-master\app\src\main\AndroidManifest.xml:75:13-37
+89
+90        <activity
+90-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\Jingyi Li\.gradle\caches\transforms-2\files-2.1\82ce6cb180408623be2d554a681bee21\jetified-firebase-auth-16.0.5\AndroidManifest.xml:24:9-31:50
+91            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+91-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\Jingyi Li\.gradle\caches\transforms-2\files-2.1\82ce6cb180408623be2d554a681bee21\jetified-firebase-auth-16.0.5\AndroidManifest.xml:25:13-85
+92            android:excludeFromRecents="true"
+92-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\Jingyi Li\.gradle\caches\transforms-2\files-2.1\82ce6cb180408623be2d554a681bee21\jetified-firebase-auth-16.0.5\AndroidManifest.xml:26:13-46
+93            android:exported="true"
+93-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\Jingyi Li\.gradle\caches\transforms-2\files-2.1\82ce6cb180408623be2d554a681bee21\jetified-firebase-auth-16.0.5\AndroidManifest.xml:27:13-36
+94            android:launchMode="singleTask"
+94-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\Jingyi Li\.gradle\caches\transforms-2\files-2.1\82ce6cb180408623be2d554a681bee21\jetified-firebase-auth-16.0.5\AndroidManifest.xml:28:13-44
+95            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+95-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\Jingyi Li\.gradle\caches\transforms-2\files-2.1\82ce6cb180408623be2d554a681bee21\jetified-firebase-auth-16.0.5\AndroidManifest.xml:29:13-102
+96            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+96-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\Jingyi Li\.gradle\caches\transforms-2\files-2.1\82ce6cb180408623be2d554a681bee21\jetified-firebase-auth-16.0.5\AndroidManifest.xml:30:13-72
+97
+98        <service
+98-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\Jingyi Li\.gradle\caches\transforms-2\files-2.1\82ce6cb180408623be2d554a681bee21\jetified-firebase-auth-16.0.5\AndroidManifest.xml:33:9-39:19
+99            android:name="com.google.firebase.components.ComponentDiscoveryService"
+99-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\Jingyi Li\.gradle\caches\transforms-2\files-2.1\82ce6cb180408623be2d554a681bee21\jetified-firebase-auth-16.0.5\AndroidManifest.xml:34:13-84
+100            android:exported="false" >
+100-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\Jingyi Li\.gradle\caches\transforms-2\files-2.1\82ce6cb180408623be2d554a681bee21\jetified-firebase-auth-16.0.5\AndroidManifest.xml:35:13-37
+101            <meta-data
+101-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\Jingyi Li\.gradle\caches\transforms-2\files-2.1\82ce6cb180408623be2d554a681bee21\jetified-firebase-auth-16.0.5\AndroidManifest.xml:36:13-38:85
+102                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+102-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\Jingyi Li\.gradle\caches\transforms-2\files-2.1\82ce6cb180408623be2d554a681bee21\jetified-firebase-auth-16.0.5\AndroidManifest.xml:37:17-109
+103                android:value="com.google.firebase.components.ComponentRegistrar" />
+103-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\Jingyi Li\.gradle\caches\transforms-2\files-2.1\82ce6cb180408623be2d554a681bee21\jetified-firebase-auth-16.0.5\AndroidManifest.xml:38:17-82
+104        </service>
+105
+106        <activity
+106-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\Jingyi Li\.gradle\caches\transforms-2\files-2.1\b1be545228a008e6f823cdc88a8c004f\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
+107            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+107-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\Jingyi Li\.gradle\caches\transforms-2\files-2.1\b1be545228a008e6f823cdc88a8c004f\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
+108            android:exported="false"
+108-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\Jingyi Li\.gradle\caches\transforms-2\files-2.1\b1be545228a008e6f823cdc88a8c004f\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
+109            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+109-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\Jingyi Li\.gradle\caches\transforms-2\files-2.1\b1be545228a008e6f823cdc88a8c004f\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
+110
+111        <provider
+111-->[com.google.firebase:firebase-common:16.0.3] C:\Users\Jingyi Li\.gradle\caches\transforms-2\files-2.1\2d4ed1c814c328eede509ac9fe3134f8\jetified-firebase-common-16.0.3\AndroidManifest.xml:10:9-14:39
+112            android:name="com.google.firebase.provider.FirebaseInitProvider"
+112-->[com.google.firebase:firebase-common:16.0.3] C:\Users\Jingyi Li\.gradle\caches\transforms-2\files-2.1\2d4ed1c814c328eede509ac9fe3134f8\jetified-firebase-common-16.0.3\AndroidManifest.xml:11:13-77
+113            android:authorities="com.npdevs.healthcastle.firebaseinitprovider"
+113-->[com.google.firebase:firebase-common:16.0.3] C:\Users\Jingyi Li\.gradle\caches\transforms-2\files-2.1\2d4ed1c814c328eede509ac9fe3134f8\jetified-firebase-common-16.0.3\AndroidManifest.xml:12:13-72
+114            android:exported="false"
+114-->[com.google.firebase:firebase-common:16.0.3] C:\Users\Jingyi Li\.gradle\caches\transforms-2\files-2.1\2d4ed1c814c328eede509ac9fe3134f8\jetified-firebase-common-16.0.3\AndroidManifest.xml:13:13-37
+115            android:initOrder="100" />
+115-->[com.google.firebase:firebase-common:16.0.3] C:\Users\Jingyi Li\.gradle\caches\transforms-2\files-2.1\2d4ed1c814c328eede509ac9fe3134f8\jetified-firebase-common-16.0.3\AndroidManifest.xml:14:13-36
+116
+117        <meta-data
+117-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\Jingyi Li\.gradle\caches\transforms-2\files-2.1\c3cf07eefcfa49f7304d74bc5e578350\jetified-play-services-basement-16.1.0\AndroidManifest.xml:23:9-25:69
+118            android:name="com.google.android.gms.version"
+118-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\Jingyi Li\.gradle\caches\transforms-2\files-2.1\c3cf07eefcfa49f7304d74bc5e578350\jetified-play-services-basement-16.1.0\AndroidManifest.xml:24:13-58
+119            android:value="@integer/google_play_services_version" />
+119-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\Jingyi Li\.gradle\caches\transforms-2\files-2.1\c3cf07eefcfa49f7304d74bc5e578350\jetified-play-services-basement-16.1.0\AndroidManifest.xml:25:13-66
+120    </application>
+121
+122</manifest>

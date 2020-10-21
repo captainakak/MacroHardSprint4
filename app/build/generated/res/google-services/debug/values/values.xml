@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">432626004033-go2mlj8a15i49ekqq0fnjlsobs0qikpl.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://healthcastle-35d9d.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">432626004033</string>
+    <string name="google_api_key" translatable="false">AIzaSyAYGGwcO3A-Kvf3xL7kr4-p9lSd_oxTyU4</string>
+    <string name="google_app_id" translatable="false">1:432626004033:android:9d91de26b9b2f7a33f16c0</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAYGGwcO3A-Kvf3xL7kr4-p9lSd_oxTyU4</string>
+    <string name="google_storage_bucket" translatable="false">healthcastle-35d9d.appspot.com</string>
+    <string name="project_id" translatable="false">healthcastle-35d9d</string>
+</resources>
