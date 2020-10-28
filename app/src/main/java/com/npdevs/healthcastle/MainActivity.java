@@ -61,14 +61,14 @@ public class MainActivity extends AppCompatActivity {
 
 		loadPreferences();
 
-		if (!loggedIn.equals("no") && ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA)
-				== PackageManager.PERMISSION_GRANTED) {
+//		if (!loggedIn.equals("no") && ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA)
+//				== PackageManager.PERMISSION_GRANTED) {
 //            Toast.makeText(getApplicationContext(),"Login Success!",Toast.LENGTH_LONG).show();
 			Intent intent = new Intent(MainActivity.this, FrontActivity.class);
 			intent.putExtra("MOB_NUMBER", loggedIn);
 			startActivity(intent);
 			finish();
-		}
+//		}
 		progressDialog = new ProgressDialog(this);
 		progressDialog.setCancelable(false);
 
@@ -175,31 +175,31 @@ public class MainActivity extends AppCompatActivity {
 				assert digest != null;
 				byte[] pasd = digest.digest(pwd.getBytes(StandardCharsets.UTF_8));
 				pwd = Arrays.toString(pasd);
-				if (dataSnapshot.child(mob).exists()) {
-					if (!mob.isEmpty()) {
-						Users login = dataSnapshot.child(mob).getValue(Users.class);
-						if (login.getPassword().equals(pwd)) {
-							mobNo = mob;
-							clearTable();
-							saveTable(login.getAge(), login.getHeight(), login.getWeight(), login.getSex());
-							Toast.makeText(getApplicationContext(), "Login Success!", Toast.LENGTH_LONG).show();
+//				if (dataSnapshot.child(mob).exists()) {
+//					if (!mob.isEmpty()) {
+//						Users login = dataSnapshot.child(mob).getValue(Users.class);
+//						if (login.getPassword().equals(pwd)) {
+//							mobNo = mob;
+//							clearTable();
+//							saveTable(login.getAge(), login.getHeight(), login.getWeight(), login.getSex());
+//							Toast.makeText(getApplicationContext(), "Login Success!", Toast.LENGTH_LONG).show();
 							Intent intent = new Intent(MainActivity.this, FrontActivity.class);
-							intent.putExtra("MOB_NUMBER", mob);
-							startActivity(intent);
-							progressDialog.cancel();
-							finish();
-						} else {
-							Toast.makeText(getApplicationContext(), "Wrong Password!", Toast.LENGTH_LONG).show();
-							progressDialog.cancel();
-						}
-					} else {
-						Toast.makeText(getApplicationContext(), "Enter 10 digit Mobile number!", Toast.LENGTH_LONG).show();
-						progressDialog.cancel();
-					}
-				} else {
-					Toast.makeText(getApplicationContext(), "User is not registered!", Toast.LENGTH_LONG).show();
-					progressDialog.cancel();
-				}
+				intent.putExtra("MOB_NUMBER", mob);
+				startActivity(intent);
+				progressDialog.cancel();
+				finish();
+//						} else {
+//							Toast.makeText(getApplicationContext(), "Wrong Password!", Toast.LENGTH_LONG).show();
+//							progressDialog.cancel();
+//						}
+//					} else {
+//						Toast.makeText(getApplicationContext(), "Enter 10 digit Mobile number!", Toast.LENGTH_LONG).show();
+//						progressDialog.cancel();
+//					}
+//				} else {
+//					Toast.makeText(getApplicationContext(), "User is not registered!", Toast.LENGTH_LONG).show();
+//					progressDialog.cancel();
+//				}
 			}
 
 			@Override
