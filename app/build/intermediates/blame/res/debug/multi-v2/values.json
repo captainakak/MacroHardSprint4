@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Jingyi Li\\CS8803MAS\\HealthCastle-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Users\\Jingyi Li\\Documents\\GitHub\\CS8803MAS\\MacroHardSprint4\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Jingyi Li\\.gradle\\caches\\transforms-2\\files-2.1\\4b0791ea15ad38efa383232c081ba269\\transition-1.0.1\\res\\values\\values.xml",
@@ -18,6 +18,23 @@
                         "startOffsets": "44018,44404,44543,44590,44645,45527,45581,45633,45682,45743",
                         "endColumns": "39,42,46,54,44,53,51,48,60,49",
                         "endOffsets": "44053,44442,44585,44640,44685,45576,45628,45677,45738,45788"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Jingyi Li\\Documents\\GitHub\\CS8803MAS\\MacroHardSprint4\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "3,2,1",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "106,67,17",
+                        "endColumns": "39,37,48",
+                        "endOffsets": "141,100,61"
+                    },
+                    "to": {
+                        "startLines": "779,780,808",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "47574,47614,49518",
+                        "endColumns": "39,37,48",
+                        "endOffsets": "47609,47647,49562"
                     }
                 },
                 {
@@ -40,13 +57,13 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Jingyi Li\\CS8803MAS\\HealthCastle-master\\app\\src\\main\\res\\values\\colors.xml",
+                    "source": "C:\\Users\\Jingyi Li\\Documents\\GitHub\\CS8803MAS\\MacroHardSprint4\\app\\src\\main\\res\\values\\colors.xml",
                     "from": {
                         "startLines": "5,4,7,2,3,10,11,12,14,9,13,15,6,16",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "199,153,300,55,102,397,442,492,584,351,537,628,244,666",
+                        "startOffsets": "204,157,307,57,105,407,453,504,598,360,550,643,250,682",
                         "endColumns": "44,45,49,46,50,44,49,44,43,45,46,37,55,39",
-                        "endOffsets": "239,194,345,97,148,437,487,532,623,392,579,661,295,701"
+                        "endOffsets": "244,198,352,99,151,447,498,544,637,401,592,676,301,717"
                     },
                     "to": {
                         "startLines": "219,236,237,238,239,294,295,296,297,298,299,331,342,345",
@@ -207,6 +224,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\Jingyi Li\\Documents\\GitHub\\CS8803MAS\\MacroHardSprint4\\app\\src\\main\\res\\values\\ic_launcher_background.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endColumns": "56",
+                        "endOffsets": "109"
+                    },
+                    "to": {
+                        "startLines": "293",
+                        "startColumns": "4",
+                        "startOffsets": "16487",
+                        "endColumns": "56",
+                        "endOffsets": "16539"
+                    }
+                },
+                {
                     "source": "C:\\Users\\Jingyi Li\\.gradle\\caches\\transforms-2\\files-2.1\\c3cf07eefcfa49f7304d74bc5e578350\\jetified-play-services-basement-16.1.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "4,7",
@@ -224,20 +258,39 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Jingyi Li\\CS8803MAS\\HealthCastle-master\\app\\src\\main\\res\\values\\strings.xml",
+                    "source": "C:\\Users\\Jingyi Li\\Documents\\GitHub\\CS8803MAS\\MacroHardSprint4\\app\\build\\generated\\res\\google-services\\debug\\values\\values.xml",
                     "from": {
-                        "startLines": "3,2,1",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "103,65,16",
-                        "endColumns": "39,37,48",
-                        "endOffsets": "138,98,60"
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,199,312,394,498,607,727,829",
+                        "endColumns": "143,112,81,103,108,119,101,78",
+                        "endOffsets": "194,307,389,493,602,722,824,903"
                     },
                     "to": {
-                        "startLines": "779,780,808",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "47574,47614,49518",
-                        "endColumns": "39,37,48",
-                        "endOffsets": "47609,47647,49562"
+                        "startLines": "834,839,840,841,842,843,844,884",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "52608,53220,53333,53415,53519,53628,53748,60814",
+                        "endColumns": "143,112,81,103,108,119,101,78",
+                        "endOffsets": "52747,53328,53410,53514,53623,53743,53845,60888"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Jingyi Li\\Documents\\GitHub\\CS8803MAS\\MacroHardSprint4\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "34,53,43,38,29,25,48,3",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "1731,2588,2114,1888,1507,1341,2338,57",
+                        "endLines": "36,57,46,41,32,27,51,23",
+                        "endColumns": "12,12,12,12,12,12,12,12",
+                        "endOffsets": "1880,2817,2330,2106,1723,1499,2580,1333"
+                    },
+                    "to": {
+                        "startLines": "900,903,908,912,916,920,923,927",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "62021,62173,62403,62621,62841,63059,63220,63464",
+                        "endLines": "902,907,911,915,919,922,926,947",
+                        "endColumns": "12,12,12,12,12,12,12,12",
+                        "endOffsets": "62168,62398,62616,62836,63054,63215,63459,64720"
                     }
                 },
                 {
@@ -257,59 +310,6 @@
                         "endLines": "180,485,486,487,495,496,497,717,6475",
                         "endColumns": "55,58,47,55,74,75,71,65,24",
                         "endOffsets": "8947,29138,29186,29242,29928,30004,30076,44153,412271"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Jingyi Li\\CS8803MAS\\HealthCastle-master\\app\\build\\generated\\res\\google-services\\debug\\values\\values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,199,312,394,498,607,727,829",
-                        "endColumns": "143,112,81,103,108,119,101,78",
-                        "endOffsets": "194,307,389,493,602,722,824,903"
-                    },
-                    "to": {
-                        "startLines": "834,839,840,841,842,843,844,884",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "52608,53220,53333,53415,53519,53628,53748,60814",
-                        "endColumns": "143,112,81,103,108,119,101,78",
-                        "endOffsets": "52747,53328,53410,53514,53623,53743,53845,60888"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Jingyi Li\\CS8803MAS\\HealthCastle-master\\app\\src\\main\\res\\values\\styles.xml",
-                    "from": {
-                        "startLines": "34,53,43,38,29,25,48,3",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "1697,2535,2071,1850,1478,1316,2290,54",
-                        "endLines": "36,57,46,41,32,27,51,23",
-                        "endColumns": "12,12,12,12,12,12,12,12",
-                        "endOffsets": "1844,2760,2284,2065,1691,1472,2529,1310"
-                    },
-                    "to": {
-                        "startLines": "900,903,908,912,916,920,923,927",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "62021,62173,62403,62621,62841,63059,63220,63464",
-                        "endLines": "902,907,911,915,919,922,926,947",
-                        "endColumns": "12,12,12,12,12,12,12,12",
-                        "endOffsets": "62168,62398,62616,62836,63054,63215,63459,64720"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Jingyi Li\\CS8803MAS\\HealthCastle-master\\app\\src\\main\\res\\values\\ic_launcher_background.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "56",
-                        "endOffsets": "107"
-                    },
-                    "to": {
-                        "startLines": "293",
-                        "startColumns": "4",
-                        "startOffsets": "16487",
-                        "endColumns": "56",
-                        "endOffsets": "16539"
                     }
                 },
                 {

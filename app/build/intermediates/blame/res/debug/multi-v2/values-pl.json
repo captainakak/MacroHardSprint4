@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Jingyi Li\\CS8803MAS\\HealthCastle-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pl\\values-pl.xml",
+            "outputFile": "C:\\Users\\Jingyi Li\\Documents\\GitHub\\CS8803MAS\\MacroHardSprint4\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pl\\values-pl.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Jingyi Li\\.gradle\\caches\\transforms-2\\files-2.1\\c3cf07eefcfa49f7304d74bc5e578350\\jetified-play-services-basement-16.1.0\\res\\values-pl\\values.xml",

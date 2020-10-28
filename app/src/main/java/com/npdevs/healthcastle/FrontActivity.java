@@ -755,10 +755,10 @@ public class FrontActivity extends AppCompatActivity implements SensorEventListe
 						public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 							Users user = dataSnapshot.getValue(Users.class);
 							assert user != null;
-							ArrayList<String> emo = user.getEmotions();
-							emo.add(res.getLabel());
-							user.setEmotions(emo);
-							myRef.setValue(user);
+//							ArrayList<String> emo = user.getEmotions();
+//							emo.add(res.getLabel());
+//							user.setEmotions(emo);
+//							myRef.setValue(user);
 						}
 
 						@Override
