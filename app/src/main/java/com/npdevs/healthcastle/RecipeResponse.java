@@ -50,9 +50,9 @@ class Meals {
 
     @Override
     public String toString() {
-        return "Meals:" + '\n' +
-                "Meal name/title=" + title + '\n' +
-                "readyInMinutes='" + readyInMinutes + '\n' +
-                "sourceUrl='" + sourceUrl + '\n';
+        return
+                "Name: " + title + '\n'  +
+                "Ready Time:  " + readyInMinutes + " Minutes" + '\n' +
+                "Source: '" + sourceUrl + "'"+'\n' + '\n';
     }
 }

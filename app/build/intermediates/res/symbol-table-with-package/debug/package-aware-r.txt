@@ -1446,6 +1446,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable recipe
 drawable red_icon
 drawable test_custom_background
 drawable tooltip_frame_dark
@@ -1537,7 +1538,6 @@ id button
 id button11
 id button12
 id button13
-id button14
 id button2
 id button3
 id button4
@@ -1597,7 +1597,6 @@ id editText12
 id editText13
 id editText14
 id editText15
-id editText16
 id editText2
 id editText3
 id editText4

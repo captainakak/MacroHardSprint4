@@ -56,10 +56,26 @@ public class SugarMeasure extends AppCompatActivity {
 					RecipeResponse weatherResponse = response.body();
 					assert weatherResponse != null;
 
-					String stringBuilder =
-							"Recipe: " +
-									weatherResponse.meals.toString();
+//					String stringBuilder =
+//							"Recipe: \n" +
+//									weatherResponse.meals.toString();
+					StringBuilder sb = new StringBuilder();
+//					for (Meals m :weatherResponse.meals){
+//						sb.append("============ \n");
+//						sb.append(m.toString());
+//					}
 
+					sb.append("BREAKFAST\n");
+					sb.append(weatherResponse.meals.get(0).toString());
+					sb.append("======================== \n  \n");
+					sb.append("LUNCH\n");
+					sb.append(weatherResponse.meals.get(1).toString());
+					sb.append("========================\n \n");
+					sb.append("DINNER\n");
+					sb.append(weatherResponse.meals.get(2).toString());
+
+
+					String stringBuilder = sb.toString();
 					recipeData.setText(stringBuilder);
 					System.out.println(stringBuilder);
 					System.out.println("***************************************");
@@ -74,4 +90,47 @@ public class SugarMeasure extends AppCompatActivity {
 			}
 		});
 	}
+//	@Override
+//	protected void onCreate(Bundle savedInstanceState) {
+//		super.onCreate(savedInstanceState);
+//		setContentView(R.layout.activity_sugar_measure);
+//		recipeData = findViewById(R.id.textView18);
+//
+//		Retrofit retrofit = new Retrofit.Builder()
+//				.baseUrl("https://api.spoonacular.com/")
+//				.addConverterFactory(GsonConverterFactory.create())
+//				.build();
+//
+//		RecipeService service = retrofit.create(RecipeService.class);
+//		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+//		Call<RecipeResponse> call = service.getRecipeData();
+//		System.out.println(call);
+//
+//		call.enqueue(new Callback<BNResponse>() {
+//			@Override
+//			public void onResponse(@NonNull Call<BNResponse> call, @NonNull Response<BNResponse> response) {
+//				System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+//				System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+//				if (response.code() == 200) {
+//					BNResponse weatherResponse = response.body();
+//					assert weatherResponse != null;
+//
+//					String stringBuilder =
+//							"Recipe: " +
+//									weatherResponse.meals.toString();
+//
+//					recipeData.setText(stringBuilder);
+//					System.out.println(stringBuilder);
+//					System.out.println("***************************************");
+//					Log.i("recipeData", stringBuilder);
+//				}
+//
+//			}
+//
+//			@Override
+//			public void onFailure(Call<BNResponse> call, Throwable t) {
+//				recipeData.setText(t.getMessage());
+//			}
+//		});
+//	}
 }
