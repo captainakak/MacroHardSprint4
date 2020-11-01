@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/Users/chenjiayu/Desktop/stopwatch/MacroHardSprint4/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "/Users/chenjiayu/Desktop/stopwatch/MacroHardSprint4/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
-    },
-    {
         "merged": "/Users/chenjiayu/Desktop/stopwatch/MacroHardSprint4/app/build/intermediates/res/merged/debug/layout_activity_splash_screen.xml.flat",
         "source": "/Users/chenjiayu/Desktop/stopwatch/MacroHardSprint4/app/src/main/res/layout/activity_splash_screen.xml"
+    },
+    {
+        "merged": "/Users/chenjiayu/Desktop/stopwatch/MacroHardSprint4/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/chenjiayu/Desktop/stopwatch/MacroHardSprint4/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
         "merged": "/Users/chenjiayu/Desktop/stopwatch/MacroHardSprint4/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",

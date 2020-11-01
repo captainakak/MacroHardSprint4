@@ -75,7 +75,8 @@ public class FrontActivity extends AppCompatActivity implements SensorEventListe
 	Bitmap bmp;
 	TensorFlowClassifier classifier;
 	private TextView maxCalorie, consumedCalorie, burntCalorie, allowedCalorie, steps;
-	private Button checkSafe, addFood, addExercise;
+	//add new button
+	private Button checkSafe, addFood, addExercise, takePhoto;
 	private DatabaseHelper databaseHelper;
 	private DatabaseHelper2 databaseHelper2;
 	private TextToSpeech textToSpeech;
@@ -256,6 +257,8 @@ public class FrontActivity extends AppCompatActivity implements SensorEventListe
 		allowedCalorie = findViewById(R.id.textView8);
 		steps = findViewById(R.id.textView10);
 		checkSafe = findViewById(R.id.button);
+		//new button
+		takePhoto = findViewById(R.id.button10);
 		addFood = findViewById(R.id.button2);
 		addExercise = findViewById(R.id.button4);
 		databaseHelper = new DatabaseHelper(this);
@@ -310,6 +313,13 @@ public class FrontActivity extends AppCompatActivity implements SensorEventListe
 			}
 		});
 		addFood.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				openAddFoodActivity();
+			}
+		});
+		//take photo!
+		takePhoto.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
 				openAddFoodActivity();
