@@ -125,8 +125,8 @@ public class FrontActivity extends AppCompatActivity implements SensorEventListe
 			sHolder.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
 		}
 
-		TextView heart = findViewById(R.id.textView12);
-		heart.setText(readHeartbeat());
+//		TextView heart = findViewById(R.id.textView12);
+//		heart.setText(readHeartbeat());
 
 		dl = findViewById(R.id.activity_front);
 		t = new ActionBarDrawerToggle(this, dl, R.string.Open, R.string.Close);
@@ -362,13 +362,13 @@ public class FrontActivity extends AppCompatActivity implements SensorEventListe
 				1000 * 29 * 60, pIntent);
 	}
 
-	private String readHeartbeat() {
-		SharedPreferences sharedPreferences = getSharedPreferences("heartbeats", MODE_PRIVATE);
-		String beats = sharedPreferences.getString("beats", "no");
-		if (beats.equals("") || beats.isEmpty() || beats.equals("no"))
-			beats = "NaN";
-		return beats;
-	}
+//	private String readHeartbeat() {
+//		SharedPreferences sharedPreferences = getSharedPreferences("heartbeats", MODE_PRIVATE);
+//		String beats = sharedPreferences.getString("beats", "no");
+//		if (beats.equals("") || beats.isEmpty() || beats.equals("no"))
+//			beats = "NaN";
+//		return beats;
+//	}
 
 	private void openCheckSafeActivity() {
 		Intent intent = new Intent(this, CheckSafeSearch.class);
