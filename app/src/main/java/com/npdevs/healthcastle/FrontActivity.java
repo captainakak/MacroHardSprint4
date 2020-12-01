@@ -1,9 +1,7 @@
 package com.npdevs.healthcastle;
 
-import android.app.AlarmManager;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
-import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -54,7 +52,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Locale;
 
-public class FrontActivity extends AppCompatActivity implements OnInitListener, SurfaceHolder.Callback {
+public class FrontActivity extends AppCompatActivity implements OnInitListener {
 	static final int PIXEL_WIDTH = 48;
 	private static boolean FIRST_TIME = true;
 	boolean running = false;
@@ -110,7 +108,6 @@ public class FrontActivity extends AppCompatActivity implements OnInitListener, 
 			iv_image = (ImageView) findViewById(R.id.imageView);
 			sv = (SurfaceView) findViewById(R.id.surfaceView);
 			sHolder = sv.getHolder();
-			sHolder.addCallback(this);
 			sHolder.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
 		}
 
@@ -483,90 +480,13 @@ public class FrontActivity extends AppCompatActivity implements OnInitListener, 
 			}
 
 
-//			if (str.toLowerCase().contains("search person")) {
-//				Intent intent = new Intent(FrontActivity.this, PhoneSearch.class);
-//				try {
-//					intent.putExtra("SEARCH", str.substring(str.lastIndexOf("search person") + 14).trim().replaceAll(" ", ""));
-//				} catch (Exception e) {
-//					intent.putExtra("SEARCH", "");
-//				}
-//				intent.putExtra("MOB_NUMBER", MOB_NUMBER);
-//				startActivity(intent);
-//				break;
-//			}
-//			if (str.toLowerCase().contains("steps graph")) {
-//				Intent intent = new Intent(FrontActivity.this, StepsGraph.class);
-//				intent.putExtra("MOB_NUMBER", MOB_NUMBER);
-//				startActivity(intent);
-//				break;
-//			}
-//			if (str.toLowerCase().contains("heart graph") || str.toLowerCase().contains("heartbeat graph") || str.toLowerCase().contains("heart rate graph")) {
-//				Intent intent = new Intent(FrontActivity.this, HeartGraph.class);
-//				intent.putExtra("MOB_NUMBER", MOB_NUMBER);
-//				startActivity(intent);
-//				break;
-//			}
-//			if (str.toLowerCase().contains("measure heart")) {
-//				Intent intent = new Intent(FrontActivity.this, HeartMeter.class);
-//				startActivity(intent);
-//				break;
-//			}
-//			if (str.toLowerCase().contains("food graph") || str.toLowerCase().contains("calorie graph")) {
-//				Intent intent = new Intent(FrontActivity.this, CalorieGraph.class);
-//				intent.putExtra("MOB_NUMBER", MOB_NUMBER);
-//				startActivity(intent);
-//				break;
-//			}
+
 		}
 	}
 
 	private void speak(String string) {
 		textToSpeech.speak(String.valueOf(string), TextToSpeech.QUEUE_ADD, null);
 	}
-
-//	private void checkFamilyHealth() {
-//		final DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("users");
-//		databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
-//			@Override
-//			public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-//				Users user = dataSnapshot.child(MOB_NUMBER).getValue(Users.class);
-//				assert user != null;
-//				ArrayList<String> family = user.getFamily();
-//				for (int i = 1; i < family.size(); i++) {
-//					Users member = dataSnapshot.child(family.get(i)).getValue(Users.class);
-//					assert member != null;
-//					int sugar = 100, systole = 100;
-//					if (member.getSugar().size() > 1)
-//						sugar = member.getSugar().get(member.getSugar().size() - 1);
-//					if (member.getBloodpressure().size() > 1) {
-//						String heart = member.getBloodpressure().get(member.getBloodpressure().size() - 1);
-//						systole = Integer.parseInt(heart.substring(heart.indexOf('-') + 1));
-//					}
-//					int depcount = 0;
-//					ArrayList<String> emo = member.getEmotions();
-//					int length = emo.size() - 1;
-//					if (length >= 10) {
-//						emo.remove(0);
-//						for (int j = length - 10; j < length; j++) {
-//							String s = emo.get(j);
-//							if (s.equalsIgnoreCase("fear") || s.equalsIgnoreCase("angry") || s.equalsIgnoreCase("sad")) {
-//								depcount++;
-//							}
-//						}
-//					}
-//					if (sugar > 120 || sugar < 55 || systole < 90 || systole > 180 || depcount >= 8) {
-//						createNotificationChannel();
-//						notification(family.get(i), member);
-//					}
-//				}
-//			}
-
-//			@Override
-//			public void onCancelled(@NonNull DatabaseError databaseError) {
-//				Log.e("NSP", "Some error occurred while checking person connections");
-//			}
-//		});
-//	}
 
 	private void createNotificationChannel() {
 		// Create the NotificationChannel, but only on API 26+ because
@@ -586,51 +506,6 @@ public class FrontActivity extends AppCompatActivity implements OnInitListener, 
 		}
 	}
 
-//	@RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
-//	private void notification(String mob, Users user) {
-//		Intent intent = new Intent(this, Friends.class);
-//		intent.putExtra("MOB", mob);
-//		PendingIntent pendingintent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
-//		//PendingIntent pendingintent = stackBuilder.getPendingIntent(0 , PendingIntent.FLAG_UPDATE_CURRENT);
-//		NotificationCompat.Builder builder = new NotificationCompat.Builder(this, "Unhealthy person notify")
-//				.setSmallIcon(R.mipmap.ic_launcher_round)
-//				.setAutoCancel(true)
-//				.setContentTitle(user.getName() + " is unhealthy")
-//				.setContentText("Large vary from standard data")
-//				.setDefaults(NotificationCompat.DEFAULT_VIBRATE)
-//				.setPriority(NotificationCompat.PRIORITY_MAX)
-//				.setStyle(new NotificationCompat.BigTextStyle()
-//						.bigText("Tap to see stats..."))
-//				.setContentIntent(pendingintent);
-//		NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
-//// notificationId is a unique int for each notification that you must define
-//		notificationManager.notify(12, builder.build());
-//	}
-
-	@SuppressWarnings( "deprecation" )
-	@Override
-	public void surfaceChanged(SurfaceHolder holder, int format, int w, int h) {
-		if (FIRST_TIME) {
-			parameters = mCamera.getParameters();
-			mCamera.setParameters(parameters);
-			mCamera.startPreview();
-
-			Camera.PictureCallback mCall = new Camera.PictureCallback() {
-				@Override
-				public void onPictureTaken(byte[] data, Camera camera) {
-					bmp = BitmapFactory.decodeByteArray(data, 0, data.length);
-					Matrix matrix = new Matrix();
-					matrix.postRotate(-90);
-					Bitmap rotatedBitmap = Bitmap.createBitmap(bmp, 0, 0, bmp.getWidth(), bmp.getHeight(), matrix, true);
-					iv_image.setImageBitmap(rotatedBitmap);
-					detectEmotion();
-				}
-			};
-
-			mCamera.takePicture(null, null, mCall);
-		}
-	}
-
 	@SuppressWarnings( "deprecation" )
 	int getFrontCameraId() {
 		Camera.CameraInfo ci = new Camera.CameraInfo();
@@ -642,7 +517,6 @@ public class FrontActivity extends AppCompatActivity implements OnInitListener, 
 	}
 
 	@SuppressWarnings( "deprecation" )
-	@Override
 	public void surfaceCreated(SurfaceHolder holder) {
 		int index = getFrontCameraId();
 		if (index == -1) {
@@ -663,52 +537,11 @@ public class FrontActivity extends AppCompatActivity implements OnInitListener, 
 	}
 
 	@SuppressWarnings( "deprecation" )
-	@Override
 	public void surfaceDestroyed(SurfaceHolder holder) {
 		if (mCamera != null) {
 			mCamera.stopPreview();
 			mCamera.release();
 			mCamera = null;
-		}
-	}
-
-	@Override
-	public void onPointerCaptureChanged(boolean hasCapture) {
-
-	}
-
-	@SuppressWarnings( "deprecation" )
-	private void detectEmotion() {
-		if (FIRST_TIME) {
-			FIRST_TIME = false;
-
-			Bitmap image = ((BitmapDrawable) iv_image.getDrawable()).getBitmap();
-			Bitmap grayImage = toGrayscale(image);
-			Bitmap resizedImage = getResizedBitmap(grayImage, 48, 48);
-			int[] pixelarray;
-
-			//Initialize the intArray with the same size as the number of pixels on the image
-			pixelarray = new int[resizedImage.getWidth() * resizedImage.getHeight()];
-
-			//copy pixel data from the Bitmap into the 'intArray' array
-			resizedImage.getPixels(pixelarray, 0, resizedImage.getWidth(), 0, 0, resizedImage.getWidth(), resizedImage.getHeight());
-
-
-			float[] normalized_pixels = new float[pixelarray.length];
-			for (int i = 0; i < pixelarray.length; i++) {
-				// 0 for white and 255 for black
-				int pix = pixelarray[i];
-				int b = pix & 0xff;
-				//  normalized_pixels[i] = (float)((0xff - b)/255.0);
-				// normalized_pixels[i] = (float)(b/255.0);
-				normalized_pixels[i] = (float) (b);
-
-			}
-			System.out.println(normalized_pixels);
-			Log.d("pixel_values", String.valueOf(normalized_pixels));
-			String text = null;
-
-			Toast.makeText(FrontActivity.this, text, Toast.LENGTH_LONG).show();
 		}
 	}
 
