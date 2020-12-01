@@ -6,208 +6,227 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="23"
-8-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml
+8-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml
+9-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml
 10
 11    <uses-feature
-11-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:5:5-7:35
+11-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:5:5-7:35
 12        android:name="android.hardware.sensor.stepcounter"
-12-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:6:9-59
+12-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:6:9-59
 13        android:required="true" />
-13-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:7:9-32
+13-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:7:9-32
 14
 15    <uses-permission android:name="android.permission.WAKE_LOCK" />
-15-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:9:5-68
-15-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:9:22-65
+15-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:9:5-68
+15-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:9:22-65
 16    <uses-permission android:name="android.permission.CAMERA" />
-16-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:10:5-65
-16-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:10:22-62
+16-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:10:5-65
+16-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:10:22-62
 17    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
-17-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:11:5-79
-17-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:11:22-76
+17-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:11:5-79
+17-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:11:22-76
 18    <uses-permission android:name="android.hardware.sensor.stepcounter" />
-18-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:12:5-75
-18-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:12:22-72
+18-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:12:5-75
+18-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:12:22-72
 19    <uses-permission android:name="android.hardware.sensor.stepdetector" />
-19-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:13:5-76
-19-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:13:22-73
+19-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:13:5-76
+19-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:13:22-73
 20    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-20-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:14:5-81
-20-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:14:22-78
+20-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:14:5-81
+20-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:14:22-78
 21    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-21-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:15:5-80
-21-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:15:22-77
+21-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:15:5-80
+21-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:15:22-77
 22
 23    <uses-feature
-23-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:17:5-19:35
+23-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:17:5-19:35
 24        android:name="android.hardware.camera"
-24-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:18:9-47
+24-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:18:9-47
 25        android:required="true" />
-25-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:19:9-32
+25-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:19:9-32
 26    <uses-feature
-26-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:20:5-22:35
+26-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:20:5-22:35
 27        android:name="android.hardware.camera.flash"
-27-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:21:9-53
+27-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:21:9-53
 28        android:required="true" />
-28-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:22:9-32
+28-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:22:9-32
 29    <uses-feature android:name="android.hardware.camera.autofocus" />
-29-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:23:5-70
-29-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:23:19-67
+29-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:23:5-70
+29-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:23:19-67
 30
 31    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-31-->[com.google.firebase:firebase-database:16.0.4] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\62d00f208ec43600796a92c0ba1d3a11\jetified-firebase-database-16.0.4\AndroidManifest.xml:22:5-79
-31-->[com.google.firebase:firebase-database:16.0.4] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\62d00f208ec43600796a92c0ba1d3a11\jetified-firebase-database-16.0.4\AndroidManifest.xml:22:22-76
+31-->[com.google.firebase:firebase-database:16.0.4] /Users/chenjiayu/.gradle/caches/transforms-2/files-2.1/d5ce23673dc0cced323434df87ae0eb9/jetified-firebase-database-16.0.4/AndroidManifest.xml:22:5-79
+31-->[com.google.firebase:firebase-database:16.0.4] /Users/chenjiayu/.gradle/caches/transforms-2/files-2.1/d5ce23673dc0cced323434df87ae0eb9/jetified-firebase-database-16.0.4/AndroidManifest.xml:22:22-76
 32    <uses-permission android:name="android.permission.INTERNET" />
-32-->[com.google.firebase:firebase-database:16.0.4] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\62d00f208ec43600796a92c0ba1d3a11\jetified-firebase-database-16.0.4\AndroidManifest.xml:23:5-67
-32-->[com.google.firebase:firebase-database:16.0.4] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\62d00f208ec43600796a92c0ba1d3a11\jetified-firebase-database-16.0.4\AndroidManifest.xml:23:22-64
+32-->[com.google.firebase:firebase-database:16.0.4] /Users/chenjiayu/.gradle/caches/transforms-2/files-2.1/d5ce23673dc0cced323434df87ae0eb9/jetified-firebase-database-16.0.4/AndroidManifest.xml:23:5-67
+32-->[com.google.firebase:firebase-database:16.0.4] /Users/chenjiayu/.gradle/caches/transforms-2/files-2.1/d5ce23673dc0cced323434df87ae0eb9/jetified-firebase-database-16.0.4/AndroidManifest.xml:23:22-64
 33    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 34
 35    <application
-35-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:25:5-61:19
+35-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:25:5-71:19
 36        android:allowBackup="true"
-36-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:26:9-35
+36-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:26:9-35
 37        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-37-->[androidx.core:core:1.1.0] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\e9e94577a8a8e15e5bd8df1dec21420f\core-1.1.0\AndroidManifest.xml:24:18-86
+37-->[androidx.core:core:1.1.0] /Users/chenjiayu/.gradle/caches/transforms-2/files-2.1/e9e94577a8a8e15e5bd8df1dec21420f/core-1.1.0/AndroidManifest.xml:24:18-86
 38        android:debuggable="true"
 39        android:icon="@mipmap/ic_launcher"
-39-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:27:9-43
+39-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:27:9-43
 40        android:label="@string/app_name"
-40-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:28:9-41
+40-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:28:9-41
 41        android:roundIcon="@mipmap/ic_launcher_round"
-41-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:29:9-54
+41-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:29:9-54
 42        android:supportsRtl="true"
-42-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:30:9-35
+42-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:30:9-35
 43        android:testOnly="true"
 44        android:theme="@style/AppTheme" >
-44-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:31:9-40
+44-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:31:9-40
 45        <activity android:name="com.npdevs.healthcastle.SplashScreen" >
-45-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:32:9-38:20
-45-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:32:19-47
+45-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:32:9-38:20
+45-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:32:19-47
 46            <intent-filter>
-46-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:33:13-37:29
+46-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:33:13-37:29
 47                <action android:name="android.intent.action.MAIN" />
-47-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:34:17-69
-47-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:34:25-66
+47-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:34:17-69
+47-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:34:25-66
 48
 49                <category android:name="android.intent.category.LAUNCHER" />
-49-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:36:17-77
-49-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:36:27-74
+49-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:36:17-77
+49-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:36:27-74
 50            </intent-filter>
 51        </activity>
 52        <activity android:name="com.npdevs.healthcastle.SugarMeasure" />
-52-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:39:9-50
-52-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:39:19-47
+52-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:39:9-50
+52-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:39:19-47
 53        <activity android:name="com.npdevs.healthcastle.EditProfile" />
-53-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:40:9-49
-53-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:40:19-46
+53-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:40:9-49
+53-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:40:19-46
 54        <activity android:name="com.npdevs.healthcastle.AddNewExercise" />
-54-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:41:9-52
-54-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:41:19-49
+54-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:41:9-52
+54-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:41:19-49
 55        <activity android:name="com.npdevs.healthcastle.AddNewFood" />
-55-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:42:9-48
-55-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:42:19-45
+55-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:42:9-48
+55-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:42:19-45
 56        <activity android:name="com.npdevs.healthcastle.CheckSafeSearch" />
-56-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:43:9-53
-56-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:43:19-50
+56-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:43:9-53
+56-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:43:19-50
 57        <activity android:name="com.npdevs.healthcastle.AddFoodSearch" />
-57-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:44:9-51
-57-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:44:19-48
+57-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:44:9-51
+57-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:44:19-48
 58        <activity android:name="com.npdevs.healthcastle.AddFood" />
-58-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:45:9-45
-58-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:45:19-42
+58-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:45:9-45
+58-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:45:19-42
 59        <activity android:name="com.npdevs.healthcastle.AddExerciseSearch" />
-59-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:46:9-55
-59-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:46:19-52
+59-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:46:9-55
+59-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:46:19-52
 60        <activity android:name="com.npdevs.healthcastle.AddExercise" />
-60-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:47:9-49
-60-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:47:19-46
+60-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:47:9-49
+60-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:47:19-46
 61        <activity android:name="com.npdevs.healthcastle.About" />
-61-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:48:9-43
-61-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:48:19-40
+61-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:48:9-43
+61-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:48:19-40
 62        <activity android:name="com.npdevs.healthcastle.CheckSafe" />
-62-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:49:9-47
-62-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:49:19-44
+62-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:49:9-47
+62-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:49:19-44
 63        <activity android:name="com.npdevs.healthcastle.FrontActivity" />
-63-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:50:9-51
-63-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:50:19-48
+63-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:50:9-51
+63-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:50:19-48
 64        <activity android:name="com.npdevs.healthcastle.SignUp" />
-64-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:51:9-44
-64-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:51:19-41
+64-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:51:9-44
+64-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:51:19-41
 65        <activity android:name="com.npdevs.healthcastle.MainActivity" />
-65-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:52:9-49
-65-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:52:19-47
+65-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:52:9-49
+65-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:52:19-47
 66        <activity android:name="com.npdevs.healthcastle.ProfileActivity" />
-66-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:53:9-52
-66-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:53:19-50
+66-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:53:9-52
+66-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:53:19-50
 67        <activity android:name="com.npdevs.healthcastle.ResPwdActivity" />
-67-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:54:9-51
-67-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:54:19-49
+67-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:54:9-51
+67-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:54:19-49
 68        <activity android:name="com.npdevs.healthcastle.RegistActivity" />
-68-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:55:9-51
-68-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:55:19-49
+68-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:55:9-51
+68-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:55:19-49
 69        <activity android:name="com.npdevs.healthcastle.TakePhoto" />
-69-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:56:9-46
-69-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:56:19-44
+69-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:56:9-46
+69-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:56:19-44
 70        <activity android:name="com.npdevs.healthcastle.LoginActivity" >
-70-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:57:9-59:20
-70-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:57:19-48
+70-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:57:9-59:20
+70-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:57:19-48
 71        </activity>
-72        <activity
-72-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:24:9-31:50
-73            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
-73-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:25:13-85
-74            android:excludeFromRecents="true"
-74-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:26:13-46
-75            android:exported="true"
-75-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:27:13-36
-76            android:launchMode="singleTask"
-76-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:28:13-44
-77            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
-77-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:29:13-102
-78            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-78-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:30:13-72
-79
-80        <service
-80-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:33:9-39:19
-81            android:name="com.google.firebase.components.ComponentDiscoveryService"
-81-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:34:13-84
-82            android:exported="false" >
-82-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:35:13-37
-83            <meta-data
-83-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:36:13-38:85
-84                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-84-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:37:17-109
-85                android:value="com.google.firebase.components.ComponentRegistrar" />
-85-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:38:17-82
-86        </service>
-87
-88        <activity
-88-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\bb2ebc9c39e91c810ab6f069d5c1fa45\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
-89            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-89-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\bb2ebc9c39e91c810ab6f069d5c1fa45\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
-90            android:exported="false"
-90-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\bb2ebc9c39e91c810ab6f069d5c1fa45\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
-91            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-91-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\bb2ebc9c39e91c810ab6f069d5c1fa45\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
-92
-93        <provider
-93-->[com.google.firebase:firebase-common:16.0.3] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\bc7e6160d3d297fa4db63ec5861c586a\jetified-firebase-common-16.0.3\AndroidManifest.xml:10:9-14:39
-94            android:name="com.google.firebase.provider.FirebaseInitProvider"
-94-->[com.google.firebase:firebase-common:16.0.3] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\bc7e6160d3d297fa4db63ec5861c586a\jetified-firebase-common-16.0.3\AndroidManifest.xml:11:13-77
-95            android:authorities="com.npdevs.healthcastle.firebaseinitprovider"
-95-->[com.google.firebase:firebase-common:16.0.3] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\bc7e6160d3d297fa4db63ec5861c586a\jetified-firebase-common-16.0.3\AndroidManifest.xml:12:13-72
-96            android:exported="false"
-96-->[com.google.firebase:firebase-common:16.0.3] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\bc7e6160d3d297fa4db63ec5861c586a\jetified-firebase-common-16.0.3\AndroidManifest.xml:13:13-37
-97            android:initOrder="100" />
-97-->[com.google.firebase:firebase-common:16.0.3] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\bc7e6160d3d297fa4db63ec5861c586a\jetified-firebase-common-16.0.3\AndroidManifest.xml:14:13-36
+72
+73        <provider
+73-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:61:9-69:20
+74            android:name="androidx.core.content.FileProvider"
+74-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:62:13-62
+75            android:authorities="com.npdevs.healthcastle.fileprovider"
+75-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:63:13-71
+76            android:exported="false"
+76-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:64:13-37
+77            android:grantUriPermissions="true" >
+77-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:65:13-47
+78            <meta-data
+78-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:66:13-68:64
+79                android:name="android.support.FILE_PROVIDER_PATHS"
+79-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:67:17-67
+80                android:resource="@xml/file_paths" />
+80-->/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/AndroidManifest.xml:68:17-51
+81        </provider>
+82
+83        <activity
+83-->[com.google.firebase:firebase-auth:16.0.5] /Users/chenjiayu/.gradle/caches/transforms-2/files-2.1/149a88e2409728abffe0308c967482b6/jetified-firebase-auth-16.0.5/AndroidManifest.xml:24:9-31:50
+84            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+84-->[com.google.firebase:firebase-auth:16.0.5] /Users/chenjiayu/.gradle/caches/transforms-2/files-2.1/149a88e2409728abffe0308c967482b6/jetified-firebase-auth-16.0.5/AndroidManifest.xml:25:13-85
+85            android:excludeFromRecents="true"
+85-->[com.google.firebase:firebase-auth:16.0.5] /Users/chenjiayu/.gradle/caches/transforms-2/files-2.1/149a88e2409728abffe0308c967482b6/jetified-firebase-auth-16.0.5/AndroidManifest.xml:26:13-46
+86            android:exported="true"
+86-->[com.google.firebase:firebase-auth:16.0.5] /Users/chenjiayu/.gradle/caches/transforms-2/files-2.1/149a88e2409728abffe0308c967482b6/jetified-firebase-auth-16.0.5/AndroidManifest.xml:27:13-36
+87            android:launchMode="singleTask"
+87-->[com.google.firebase:firebase-auth:16.0.5] /Users/chenjiayu/.gradle/caches/transforms-2/files-2.1/149a88e2409728abffe0308c967482b6/jetified-firebase-auth-16.0.5/AndroidManifest.xml:28:13-44
+88            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+88-->[com.google.firebase:firebase-auth:16.0.5] /Users/chenjiayu/.gradle/caches/transforms-2/files-2.1/149a88e2409728abffe0308c967482b6/jetified-firebase-auth-16.0.5/AndroidManifest.xml:29:13-102
+89            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+89-->[com.google.firebase:firebase-auth:16.0.5] /Users/chenjiayu/.gradle/caches/transforms-2/files-2.1/149a88e2409728abffe0308c967482b6/jetified-firebase-auth-16.0.5/AndroidManifest.xml:30:13-72
+90
+91        <service
+91-->[com.google.firebase:firebase-auth:16.0.5] /Users/chenjiayu/.gradle/caches/transforms-2/files-2.1/149a88e2409728abffe0308c967482b6/jetified-firebase-auth-16.0.5/AndroidManifest.xml:33:9-39:19
+92            android:name="com.google.firebase.components.ComponentDiscoveryService"
+92-->[com.google.firebase:firebase-auth:16.0.5] /Users/chenjiayu/.gradle/caches/transforms-2/files-2.1/149a88e2409728abffe0308c967482b6/jetified-firebase-auth-16.0.5/AndroidManifest.xml:34:13-84
+93            android:exported="false" >
+93-->[com.google.firebase:firebase-auth:16.0.5] /Users/chenjiayu/.gradle/caches/transforms-2/files-2.1/149a88e2409728abffe0308c967482b6/jetified-firebase-auth-16.0.5/AndroidManifest.xml:35:13-37
+94            <meta-data
+94-->[com.google.firebase:firebase-auth:16.0.5] /Users/chenjiayu/.gradle/caches/transforms-2/files-2.1/149a88e2409728abffe0308c967482b6/jetified-firebase-auth-16.0.5/AndroidManifest.xml:36:13-38:85
+95                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+95-->[com.google.firebase:firebase-auth:16.0.5] /Users/chenjiayu/.gradle/caches/transforms-2/files-2.1/149a88e2409728abffe0308c967482b6/jetified-firebase-auth-16.0.5/AndroidManifest.xml:37:17-109
+96                android:value="com.google.firebase.components.ComponentRegistrar" />
+96-->[com.google.firebase:firebase-auth:16.0.5] /Users/chenjiayu/.gradle/caches/transforms-2/files-2.1/149a88e2409728abffe0308c967482b6/jetified-firebase-auth-16.0.5/AndroidManifest.xml:38:17-82
+97        </service>
 98
-99        <meta-data
-99-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\33c2b446ac12bf14a756909f5f5a47ea\jetified-play-services-basement-16.1.0\AndroidManifest.xml:23:9-25:69
-100            android:name="com.google.android.gms.version"
-100-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\33c2b446ac12bf14a756909f5f5a47ea\jetified-play-services-basement-16.1.0\AndroidManifest.xml:24:13-58
-101            android:value="@integer/google_play_services_version" />
-101-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\33c2b446ac12bf14a756909f5f5a47ea\jetified-play-services-basement-16.1.0\AndroidManifest.xml:25:13-66
-102    </application>
+99        <activity
+99-->[com.google.android.gms:play-services-base:16.0.1] /Users/chenjiayu/.gradle/caches/transforms-2/files-2.1/ecd002c442cdd2cb9dcd65e77d07f4d8/jetified-play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
+100            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+100-->[com.google.android.gms:play-services-base:16.0.1] /Users/chenjiayu/.gradle/caches/transforms-2/files-2.1/ecd002c442cdd2cb9dcd65e77d07f4d8/jetified-play-services-base-16.0.1/AndroidManifest.xml:24:13-79
+101            android:exported="false"
+101-->[com.google.android.gms:play-services-base:16.0.1] /Users/chenjiayu/.gradle/caches/transforms-2/files-2.1/ecd002c442cdd2cb9dcd65e77d07f4d8/jetified-play-services-base-16.0.1/AndroidManifest.xml:25:13-37
+102            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+102-->[com.google.android.gms:play-services-base:16.0.1] /Users/chenjiayu/.gradle/caches/transforms-2/files-2.1/ecd002c442cdd2cb9dcd65e77d07f4d8/jetified-play-services-base-16.0.1/AndroidManifest.xml:26:13-72
 103
-104</manifest>
+104        <provider
+104-->[com.google.firebase:firebase-common:16.0.3] /Users/chenjiayu/.gradle/caches/transforms-2/files-2.1/2205901811a577ff70fad20e8e8f77d1/jetified-firebase-common-16.0.3/AndroidManifest.xml:10:9-14:39
+105            android:name="com.google.firebase.provider.FirebaseInitProvider"
+105-->[com.google.firebase:firebase-common:16.0.3] /Users/chenjiayu/.gradle/caches/transforms-2/files-2.1/2205901811a577ff70fad20e8e8f77d1/jetified-firebase-common-16.0.3/AndroidManifest.xml:11:13-77
+106            android:authorities="com.npdevs.healthcastle.firebaseinitprovider"
+106-->[com.google.firebase:firebase-common:16.0.3] /Users/chenjiayu/.gradle/caches/transforms-2/files-2.1/2205901811a577ff70fad20e8e8f77d1/jetified-firebase-common-16.0.3/AndroidManifest.xml:12:13-72
+107            android:exported="false"
+107-->[com.google.firebase:firebase-common:16.0.3] /Users/chenjiayu/.gradle/caches/transforms-2/files-2.1/2205901811a577ff70fad20e8e8f77d1/jetified-firebase-common-16.0.3/AndroidManifest.xml:13:13-37
+108            android:initOrder="100" />
+108-->[com.google.firebase:firebase-common:16.0.3] /Users/chenjiayu/.gradle/caches/transforms-2/files-2.1/2205901811a577ff70fad20e8e8f77d1/jetified-firebase-common-16.0.3/AndroidManifest.xml:14:13-36
+109
+110        <meta-data
+110-->[com.google.android.gms:play-services-basement:16.1.0] /Users/chenjiayu/.gradle/caches/transforms-2/files-2.1/648aace3b74f3c95dac17642e65a7590/jetified-play-services-basement-16.1.0/AndroidManifest.xml:23:9-25:69
+111            android:name="com.google.android.gms.version"
+111-->[com.google.android.gms:play-services-basement:16.1.0] /Users/chenjiayu/.gradle/caches/transforms-2/files-2.1/648aace3b74f3c95dac17642e65a7590/jetified-play-services-basement-16.1.0/AndroidManifest.xml:24:13-58
+112            android:value="@integer/google_play_services_version" />
+112-->[com.google.android.gms:play-services-basement:16.1.0] /Users/chenjiayu/.gradle/caches/transforms-2/files-2.1/648aace3b74f3c95dac17642e65a7590/jetified-play-services-basement-16.1.0/AndroidManifest.xml:25:13-66
+113    </application>
+114
+115</manifest>

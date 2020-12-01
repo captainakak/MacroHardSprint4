@@ -6880,14 +6880,13 @@ public final class R {
     public static final int notification_template_icon_low_bg=0x7f0700b9;
     public static final int notification_tile_bg=0x7f0700ba;
     public static final int notify_panel_notification_icon_bg=0x7f0700bb;
-    public static final int recipe=0x7f0700bc;
-    public static final int red_icon=0x7f0700bd;
-    public static final int rounded_edittext=0x7f0700be;
-    public static final int rounded_edittext_states=0x7f0700bf;
-    public static final int rounded_focused=0x7f0700c0;
-    public static final int test_custom_background=0x7f0700c1;
-    public static final int tooltip_frame_dark=0x7f0700c2;
-    public static final int tooltip_frame_light=0x7f0700c3;
+    public static final int red_icon=0x7f0700bc;
+    public static final int rounded_edittext=0x7f0700bd;
+    public static final int rounded_edittext_states=0x7f0700be;
+    public static final int rounded_focused=0x7f0700bf;
+    public static final int test_custom_background=0x7f0700c0;
+    public static final int tooltip_frame_dark=0x7f0700c1;
+    public static final int tooltip_frame_light=0x7f0700c2;
   }
   public static final class font {
     public static final int google_sans=0x7f080000;
@@ -24981,9 +24980,10 @@ public final class R {
     public static final int ViewStubCompat_android_inflatedId=2;
   }
   public static final class xml {
-    public static final int standalone_badge=0x7f130000;
-    public static final int standalone_badge_gravity_bottom_end=0x7f130001;
-    public static final int standalone_badge_gravity_bottom_start=0x7f130002;
-    public static final int standalone_badge_gravity_top_start=0x7f130003;
+    public static final int file_paths=0x7f130000;
+    public static final int standalone_badge=0x7f130001;
+    public static final int standalone_badge_gravity_bottom_end=0x7f130002;
+    public static final int standalone_badge_gravity_bottom_start=0x7f130003;
+    public static final int standalone_badge_gravity_top_start=0x7f130004;
   }
 }

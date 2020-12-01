@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\1GT\\2020 Fall\\CS 8813\\sprint4\\HealthCastle-master\\HealthCastle-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hdpi-v4\\values-hdpi-v4.xml",
+            "outputFile": "/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\zhang\\.gradle\\caches\\transforms-2\\files-2.1\\3e2ff110dde51de247983aaef5104c67\\appcompat-1.1.0\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "source": "/Users/chenjiayu/.gradle/caches/transforms-2/files-2.1/3e2ff110dde51de247983aaef5104c67/appcompat-1.1.0/res/values-hdpi-v4/values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
