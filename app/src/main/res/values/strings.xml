@@ -46,6 +46,6 @@
     <string name="save_message">Save success</string>
     <string name="edit_in">Edit income</string>
     <string name="edit_out">Edit outcome</string>
-    <string name="take_a_picture" />
+    <string name="take_a_picture">Take a food pic!</string>
     <string name="image_view" />
 </resources>

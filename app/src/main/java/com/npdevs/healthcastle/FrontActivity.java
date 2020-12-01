@@ -17,10 +17,6 @@ import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.graphics.drawable.BitmapDrawable;
 import android.hardware.Camera;
-import android.hardware.Sensor;
-import android.hardware.SensorEvent;
-import android.hardware.SensorEventListener;
-import android.hardware.SensorManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -59,9 +55,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Locale;
 
-
-
-public class FrontActivity extends AppCompatActivity implements SensorEventListener, TextToSpeech.OnInitListener, SurfaceHolder.Callback {
+public class FrontActivity extends AppCompatActivity implements TextToSpeech.OnInitListener, SurfaceHolder.Callback {
 	static final int PIXEL_WIDTH = 48;
 	private static boolean FIRST_TIME = true;
 	boolean running = false;
@@ -89,8 +83,7 @@ public class FrontActivity extends AppCompatActivity implements SensorEventListe
 	private ActionBarDrawerToggle t;
 	private NavigationView nv;
 	private int age, weight, height, sex;
-	private SensorManager sensorManager;
-	private Sensor sensor;
+
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
@@ -110,8 +103,6 @@ public class FrontActivity extends AppCompatActivity implements SensorEventListe
 
 		//checkFamilyHealth();
 		FIRST_TIME = true;
-
-		sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
 		loadUserData();
 //		schedulealarm();
 		loadModel();
@@ -428,33 +419,12 @@ public class FrontActivity extends AppCompatActivity implements SensorEventListe
 	public void onResume() {
 		super.onResume();
 		running = true;
-		sensor = sensorManager.getDefaultSensor(Sensor.TYPE_STEP_COUNTER);
-		//   if(sensorManager!=null)
-		//      Log.e("ashu","ashu");
-		if (sensor != null) {
-			sensorManager.registerListener(this, sensor, SensorManager.SENSOR_DELAY_FASTEST);
-		} else {
-			Toast.makeText(this, "Sensor not found!!!", Toast.LENGTH_SHORT).show();
-		}
 	}
 
 	@Override
 	public void onPause() {
 		super.onPause();
 		running = false;
-	}
-
-	@Override
-	public void onSensorChanged(SensorEvent sensorEvent) {
-		if (running) {
-			steps.setText(String.valueOf(sensorEvent.values[0]));
-			saveTable1(String.valueOf(sensorEvent.values[0]));
-			String burnt1 = loadPreferences("burnt");
-
-			int x = Integer.parseInt(burnt1);
-			int z = (int) (0.05 * Double.parseDouble(steps.getText().toString()));
-			saveTable(x + z + "");
-		}
 	}
 
 	private void saveTable(String ans) {
@@ -476,11 +446,6 @@ public class FrontActivity extends AppCompatActivity implements SensorEventListe
 		SharedPreferences.Editor editor = sharedPreferences.edit();
 		editor.putString("allowed", ans);
 		editor.apply();
-	}
-
-	@Override
-	public void onAccuracyChanged(Sensor sensor, int i) {
-
 	}
 
 	@Override
