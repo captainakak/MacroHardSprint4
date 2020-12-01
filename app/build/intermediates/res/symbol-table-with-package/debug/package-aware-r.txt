@@ -1554,6 +1554,7 @@ id btnLogin
 id btnProfile
 id btnRegist
 id button
+id button1
 id button10
 id button11
 id button12
@@ -1567,6 +1568,7 @@ id button7
 id button8
 id button9
 id buttonPanel
+id button_image
 id cancel_action
 id cancel_button
 id center
@@ -1647,6 +1649,7 @@ id filled
 id filter_chip
 id fitToContents
 id fixed
+id foodListView
 id forever
 id ghost_view
 id gone
@@ -1971,6 +1974,7 @@ layout activity_splash_screen
 layout activity_steps_graph
 layout activity_sugar_level_graph
 layout activity_sugar_measure
+layout activity_take_photo
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2144,6 +2148,7 @@ string google_storage_bucket
 string hello_world
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
+string image_view
 string input_message
 string jianjie
 string login
@@ -2199,6 +2204,7 @@ string spn_prompt_project
 string spn_prompt_subcategory
 string startRegist
 string status_bar_notification_info_overflow
+string take_a_picture
 string wish
 string wish_des
 style AlertDialog_AppCompat

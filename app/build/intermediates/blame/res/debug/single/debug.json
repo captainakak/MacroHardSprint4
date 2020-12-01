@@ -2676,6 +2676,10 @@
         "source": "D:\\1GT\\2020 Fall\\CS 8813\\sprint4\\HealthCastle-master\\HealthCastle-master\\app\\src\\main\\res\\layout\\item_main_feature.xml"
     },
     {
+        "merged": "D:\\1GT\\2020 Fall\\CS 8813\\sprint4\\HealthCastle-master\\HealthCastle-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_take_photo.xml.flat",
+        "source": "D:\\1GT\\2020 Fall\\CS 8813\\sprint4\\HealthCastle-master\\HealthCastle-master\\app\\src\\main\\res\\layout\\activity_take_photo.xml"
+    },
+    {
         "merged": "D:\\1GT\\2020 Fall\\CS 8813\\sprint4\\HealthCastle-master\\HealthCastle-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "C:\\Users\\zhang\\.gradle\\caches\\transforms-2\\files-2.1\\3e2ff110dde51de247983aaef5104c67\\appcompat-1.1.0\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
     },

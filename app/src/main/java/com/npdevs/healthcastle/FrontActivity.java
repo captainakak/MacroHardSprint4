@@ -59,6 +59,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Locale;
 
+
+
 public class FrontActivity extends AppCompatActivity implements SensorEventListener, TextToSpeech.OnInitListener, SurfaceHolder.Callback {
 	static final int PIXEL_WIDTH = 48;
 	private static boolean FIRST_TIME = true;
@@ -75,7 +77,7 @@ public class FrontActivity extends AppCompatActivity implements SensorEventListe
 	Bitmap bmp;
 	TensorFlowClassifier classifier;
 	private TextView maxCalorie, consumedCalorie, burntCalorie, allowedCalorie, steps;
-	private Button checkSafe, addFood, addExercise;
+	private Button checkSafe, addFood, addExercise, takePhoto;
 	private DatabaseHelper databaseHelper;
 	private DatabaseHelper2 databaseHelper2;
 	private TextToSpeech textToSpeech;
@@ -255,9 +257,10 @@ public class FrontActivity extends AppCompatActivity implements SensorEventListe
 		burntCalorie = findViewById(R.id.textView6);
 		allowedCalorie = findViewById(R.id.textView8);
 		steps = findViewById(R.id.textView10);
-		checkSafe = findViewById(R.id.button);
+		checkSafe = findViewById(R.id.button1);
 		addFood = findViewById(R.id.button2);
 		addExercise = findViewById(R.id.button4);
+		takePhoto = findViewById(R.id.button10);
 		databaseHelper = new DatabaseHelper(this);
 		Cursor res = databaseHelper.getAllData();
 		consumedCalorie.setText(loadPreferences("consumed"));
@@ -321,6 +324,18 @@ public class FrontActivity extends AppCompatActivity implements SensorEventListe
 				openAddExerciseActivity();
 			}
 		});
+		addFood.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				openAddFoodActivity();
+			}
+		});
+		takePhoto.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				openTakePhotoActivity();
+			}
+		});
 	}
 
 	private void openAddExerciseActivity() {
@@ -345,6 +360,10 @@ public class FrontActivity extends AppCompatActivity implements SensorEventListe
 		SharedPreferences.Editor editor = sharedPreferences.edit();
 		editor.putString("User", "no");
 		editor.apply();
+	}
+	private void openTakePhotoActivity() {
+		Intent intent = new Intent(FrontActivity.this, TakePhoto.class);
+		startActivity(intent);
 	}
 
 //	private void schedulealarm() {
@@ -502,6 +521,8 @@ public class FrontActivity extends AppCompatActivity implements SensorEventListe
 				startActivity(intent);
 				break;
 			}
+
+
 //			if (str.toLowerCase().contains("search person")) {
 //				Intent intent = new Intent(FrontActivity.this, PhoneSearch.class);
 //				try {

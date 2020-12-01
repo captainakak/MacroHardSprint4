@@ -66,6 +66,7 @@
         <activity android:name="com.npdevs.healthcastle.ProfileActivity" />
         <activity android:name="com.npdevs.healthcastle.ResPwdActivity" />
         <activity android:name="com.npdevs.healthcastle.RegistActivity" />
+        <activity android:name="com.npdevs.healthcastle.TakePhoto" />
         <activity android:name="com.npdevs.healthcastle.LoginActivity" >
         </activity>
         <activity
