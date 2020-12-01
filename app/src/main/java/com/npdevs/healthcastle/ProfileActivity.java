@@ -1,6 +1,8 @@
 package com.npdevs.healthcastle;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -25,10 +27,15 @@ public class ProfileActivity extends AppCompatActivity {
 
         btnLogin = (Button) findViewById(R.id.btnLogin);
         btnProfile = (Button) findViewById(R.id.btnConfirmProfile);
-
         // ...
         // Initialize Firebase Auth
         mAuth = FirebaseAuth.getInstance();
+    }
+
+    public void ProfileJump(View v) {
+        Intent intent = new Intent(ProfileActivity.this, FrontActivity.class);
+        //intent.putExtra("info", "No66778899");
+        ProfileActivity.this.startActivity(intent);
     }
 
     @Override

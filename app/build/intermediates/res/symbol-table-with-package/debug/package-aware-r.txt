@@ -1458,7 +1458,6 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
-drawable recipe
 drawable red_icon
 drawable rounded_edittext
 drawable rounded_edittext_states

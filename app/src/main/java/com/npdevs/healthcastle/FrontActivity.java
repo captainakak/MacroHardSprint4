@@ -17,10 +17,6 @@ import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.graphics.drawable.BitmapDrawable;
 import android.hardware.Camera;
-import android.hardware.Sensor;
-import android.hardware.SensorEvent;
-import android.hardware.SensorEventListener;
-import android.hardware.SensorManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -59,7 +55,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Locale;
 
-public class FrontActivity extends AppCompatActivity implements SensorEventListener, TextToSpeech.OnInitListener, SurfaceHolder.Callback {
+public class FrontActivity extends AppCompatActivity implements TextToSpeech.OnInitListener, SurfaceHolder.Callback {
 	static final int PIXEL_WIDTH = 48;
 	private static boolean FIRST_TIME = true;
 	boolean running = false;
@@ -87,8 +83,6 @@ public class FrontActivity extends AppCompatActivity implements SensorEventListe
 	private ActionBarDrawerToggle t;
 	private NavigationView nv;
 	private int age, weight, height, sex;
-	private SensorManager sensorManager;
-	private Sensor sensor;
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
@@ -109,7 +103,6 @@ public class FrontActivity extends AppCompatActivity implements SensorEventListe
 		//checkFamilyHealth();
 		FIRST_TIME = true;
 
-		sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
 		loadUserData();
 		schedulealarm();
 		loadModel();
@@ -124,9 +117,6 @@ public class FrontActivity extends AppCompatActivity implements SensorEventListe
 			sHolder.addCallback(this);
 			sHolder.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
 		}
-
-		TextView heart = findViewById(R.id.textView12);
-		heart.setText(readHeartbeat());
 
 		dl = findViewById(R.id.activity_front);
 		t = new ActionBarDrawerToggle(this, dl, R.string.Open, R.string.Close);
@@ -152,11 +142,6 @@ public class FrontActivity extends AppCompatActivity implements SensorEventListe
 			public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 				int id = item.getItemId();
 				switch (id) {
-					case R.id.heartbeat:
-						//Toast.makeText(FrontActivity.this, "Click finish when satisfied!",Toast.LENGTH_SHORT).show();
-						Intent intent = new Intent(FrontActivity.this, HeartMeter.class);
-						startActivity(intent);
-						return true;
 					case R.id.addfood:
 						//Toast.makeText(FrontActivity.this, "Settings... who got time for that?",Toast.LENGTH_SHORT).show();
 						Intent intent1 = new Intent(FrontActivity.this, AddNewFood.class);
@@ -166,67 +151,6 @@ public class FrontActivity extends AppCompatActivity implements SensorEventListe
 						//Toast.makeText(FrontActivity.this, "I won't give help!",Toast.LENGTH_SHORT).show();
 						Intent intent2 = new Intent(FrontActivity.this, AddNewExercise.class);
 						startActivity(intent2);
-						return true;
-					case R.id.heartbeatstats:
-						intent = new Intent(FrontActivity.this, HeartGraph.class);
-						intent.putExtra("MOB_NUMBER", MOB_NUMBER);
-						startActivity(intent);
-						return true;
-					case R.id.caloriestats:
-						intent = new Intent(FrontActivity.this, CalorieGraph.class);
-						intent.putExtra("MOB_NUMBER", MOB_NUMBER);
-						startActivity(intent);
-						return true;
-					case R.id.sugarstats:
-						intent = new Intent(FrontActivity.this, SugarLevelGraph.class);
-						intent.putExtra("MOB_NUMBER", MOB_NUMBER);
-						startActivity(intent);
-						return true;
-					case R.id.stepsstats:
-						intent = new Intent(FrontActivity.this, StepsGraph.class);
-						intent.putExtra("MOB_NUMBER", MOB_NUMBER);
-						startActivity(intent);
-						return true;
-					case R.id.mobSearch:
-						intent = new Intent(FrontActivity.this, PhoneSearch.class);
-						intent.putExtra("MOB_NUMBER", MOB_NUMBER);
-						startActivity(intent);
-						return true;
-					case R.id.connection:
-						intent = new Intent(FrontActivity.this, Connections.class);
-						intent.putExtra("MOB_NUMBER", MOB_NUMBER);
-						startActivity(intent);
-						return true;
-					case R.id.doctors:
-						intent = new Intent(FrontActivity.this, Friends.class);
-						intent.putExtra("MOB", MOB_NUMBER);
-						startActivity(intent);
-						return true;
-					case R.id.logout:
-						Toast.makeText(FrontActivity.this, "Logged out", Toast.LENGTH_SHORT).show();
-						clearTable();
-						saveTable();
-						intent = new Intent(FrontActivity.this, MainActivity.class);
-						startActivity(intent);
-						finish();
-						return true;
-					case R.id.contact:
-						intent = new Intent(FrontActivity.this, About.class);
-						startActivity(intent);
-						return true;
-					case R.id.feedback:
-						intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/ashu12chi/HealthCastle"));
-						startActivity(intent);
-						return true;
-					case R.id.sugar:
-						intent = new Intent(FrontActivity.this, SugarMeasure.class);
-						intent.putExtra("MOB_NUMBER", MOB_NUMBER);
-						startActivity(intent);
-						return true;
-					case R.id.bloodpressure:
-						intent = new Intent(FrontActivity.this, BloodpressureMeasure.class);
-						intent.putExtra("MOB_NUMBER", MOB_NUMBER);
-						startActivity(intent);
 						return true;
 					default:
 						return true;
@@ -362,14 +286,6 @@ public class FrontActivity extends AppCompatActivity implements SensorEventListe
 				1000 * 29 * 60, pIntent);
 	}
 
-	private String readHeartbeat() {
-		SharedPreferences sharedPreferences = getSharedPreferences("heartbeats", MODE_PRIVATE);
-		String beats = sharedPreferences.getString("beats", "no");
-		if (beats.equals("") || beats.isEmpty() || beats.equals("no"))
-			beats = "NaN";
-		return beats;
-	}
-
 	private void openCheckSafeActivity() {
 		Intent intent = new Intent(this, CheckSafeSearch.class);
 		startActivity(intent);
@@ -381,56 +297,28 @@ public class FrontActivity extends AppCompatActivity implements SensorEventListe
 	}
 
 	private void loadUserData() {
-		SharedPreferences sharedPreferences = getSharedPreferences("usersave", MODE_PRIVATE);
-		String temp = sharedPreferences.getString("Age", "0");
-		if (temp.equals("") || temp.isEmpty() || temp.equals("0"))
-			temp = "0";
-		age = Integer.parseInt(temp);
-		temp = sharedPreferences.getString("Height", "0");
-		if (temp.equals("") || temp.isEmpty() || temp.equals("0"))
-			temp = "0";
-		height = Integer.parseInt(temp);
-		temp = sharedPreferences.getString("Weight", "0");
-		if (temp.equals("") || temp.isEmpty() || temp.equals("0"))
-			temp = "0";
-		weight = Integer.parseInt(temp);
-		temp = sharedPreferences.getString("Sex", "0");
-		if (temp.equals("") || temp.isEmpty() || temp.equals("0"))
-			temp = "0";
-		sex = Integer.parseInt(temp);
-	}
+//		SharedPreferences sharedPreferences = getSharedPreferences("usersave", MODE_PRIVATE);
+//		String temp = sharedPreferences.getString("Age", "0");
+//		if (temp.equals("") || temp.isEmpty() || temp.equals("0"))
+//			temp = "0";
+//		age = Integer.parseInt(temp);
+//		temp = sharedPreferences.getString("Height", "0");
+//		if (temp.equals("") || temp.isEmpty() || temp.equals("0"))
+//			temp = "0";
+//		height = Integer.parseInt(temp);
+//		temp = sharedPreferences.getString("Weight", "0");
+//		if (temp.equals("") || temp.isEmpty() || temp.equals("0"))
+//			temp = "0";
+//		weight = Integer.parseInt(temp);
+//		temp = sharedPreferences.getString("Sex", "0");
+//		if (temp.equals("") || temp.isEmpty() || temp.equals("0"))
+//			temp = "0";
+//		sex = Integer.parseInt(temp);
 
-	@Override
-	public void onResume() {
-		super.onResume();
-		running = true;
-		sensor = sensorManager.getDefaultSensor(Sensor.TYPE_STEP_COUNTER);
-		//   if(sensorManager!=null)
-		//      Log.e("ashu","ashu");
-		if (sensor != null) {
-			sensorManager.registerListener(this, sensor, SensorManager.SENSOR_DELAY_FASTEST);
-		} else {
-			Toast.makeText(this, "Sensor not found!!!", Toast.LENGTH_SHORT).show();
-		}
-	}
-
-	@Override
-	public void onPause() {
-		super.onPause();
-		running = false;
-	}
-
-	@Override
-	public void onSensorChanged(SensorEvent sensorEvent) {
-		if (running) {
-			steps.setText(String.valueOf(sensorEvent.values[0]));
-			saveTable1(String.valueOf(sensorEvent.values[0]));
-			String burnt1 = loadPreferences("burnt");
-
-			int x = Integer.parseInt(burnt1);
-			int z = (int) (0.05 * Double.parseDouble(steps.getText().toString()));
-			saveTable(x + z + "");
-		}
+		age = Integer.parseInt("30");
+		height = Integer.parseInt("160");
+		weight = Integer.parseInt("120");
+		sex = Integer.parseInt("0");
 	}
 
 	private void saveTable(String ans) {
@@ -452,11 +340,6 @@ public class FrontActivity extends AppCompatActivity implements SensorEventListe
 		SharedPreferences.Editor editor = sharedPreferences.edit();
 		editor.putString("allowed", ans);
 		editor.apply();
-	}
-
-	@Override
-	public void onAccuracyChanged(Sensor sensor, int i) {
-
 	}
 
 	@Override
@@ -514,17 +397,7 @@ public class FrontActivity extends AppCompatActivity implements SensorEventListe
 				startActivity(intent);
 				break;
 			}
-			if (str.toLowerCase().contains("heart graph") || str.toLowerCase().contains("heartbeat graph") || str.toLowerCase().contains("heart rate graph")) {
-				Intent intent = new Intent(FrontActivity.this, HeartGraph.class);
-				intent.putExtra("MOB_NUMBER", MOB_NUMBER);
-				startActivity(intent);
-				break;
-			}
-			if (str.toLowerCase().contains("measure heart")) {
-				Intent intent = new Intent(FrontActivity.this, HeartMeter.class);
-				startActivity(intent);
-				break;
-			}
+
 			if (str.toLowerCase().contains("food graph") || str.toLowerCase().contains("calorie graph")) {
 				Intent intent = new Intent(FrontActivity.this, CalorieGraph.class);
 				intent.putExtra("MOB_NUMBER", MOB_NUMBER);
@@ -552,10 +425,6 @@ public class FrontActivity extends AppCompatActivity implements SensorEventListe
 					int sugar = 100, systole = 100;
 					if (member.getSugar().size() > 1)
 						sugar = member.getSugar().get(member.getSugar().size() - 1);
-					if (member.getBloodpressure().size() > 1) {
-						String heart = member.getBloodpressure().get(member.getBloodpressure().size() - 1);
-						systole = Integer.parseInt(heart.substring(heart.indexOf('-') + 1));
-					}
 					int depcount = 0;
 					ArrayList<String> emo = member.getEmotions();
 					int length = emo.size() - 1;

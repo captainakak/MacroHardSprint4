@@ -14,14 +14,16 @@
         android:text="Height(cm)"
         android:textColor="@color/blue"
         android:textSize="20sp" />
+
     <EditText
-android:id="@+id/editHeight"
-style="@style/textstyle"
-android:layout_width="fill_parent"
-android:background="@drawable/rounded_edittext_states"
-android:hint="Height"
-android:lines="1"
-android:singleLine="true" />
+        android:id="@+id/editHeight"
+        style="@style/textstyle"
+        android:layout_width="fill_parent"
+        android:background="@drawable/rounded_edittext_states"
+        android:hint="Height"
+        android:lines="1"
+        android:singleLine="true" />
+
     <TextView
         android:id="@+id/txtWeight"
         android:layout_width="wrap_content"
@@ -98,7 +100,7 @@ android:singleLine="true" />
         android:layout_width="372dp"
         android:layout_height="wrap_content"
         android:background="@drawable/mybutton"
-        android:onClick="OnMyLoginClick"
+        android:onClick="ProfileJump"
         android:text="Confirm Profile"
         android:textAlignment="center"
         android:textColor="@color/blue"

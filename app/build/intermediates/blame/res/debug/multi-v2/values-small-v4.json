@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\1GT\\2020 Fall\\CS 8813\\sprint4\\HealthCastle-master\\HealthCastle-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-small-v4\\values-small-v4.xml",
+            "outputFile": "C:\\Users\\Jingyi Li\\Documents\\GitHub\\CS8803MAS\\MacroHardSprint4\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-small-v4\\values-small-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\zhang\\.gradle\\caches\\transforms-2\\files-2.1\\1fae9c91ed995797a25542a971b8ed88\\material-1.1.0-beta01\\res\\values-small-v4\\values-small-v4.xml",
+                    "source": "C:\\Users\\Jingyi Li\\.gradle\\caches\\transforms-2\\files-2.1\\1fae9c91ed995797a25542a971b8ed88\\material-1.1.0-beta01\\res\\values-small-v4\\values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
