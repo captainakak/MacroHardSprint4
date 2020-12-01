@@ -36,16 +36,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Emotions" />
-        <activity android:name=".SugarLevelGraph" />
-        <activity android:name=".BloodpressureMeasure" />
         <activity android:name=".SugarMeasure" />
-        <activity android:name=".Friends" />
-        <activity android:name=".Connections" />
         <activity android:name=".EditProfile" />
-        <activity android:name=".PhoneSearch" />
-        <activity android:name=".StepsGraph" />
-        <activity android:name=".CalorieGraph" />
         <activity android:name=".AddNewExercise" />
         <activity android:name=".AddNewFood" />
         <activity android:name=".CheckSafeSearch" />
@@ -53,10 +45,8 @@
         <activity android:name=".AddFood" />
         <activity android:name=".AddExerciseSearch" />
         <activity android:name=".AddExercise" />
-        <activity android:name=".HeartGraph" />
         <activity android:name=".About" />
         <activity android:name=".CheckSafe" />
-        <activity android:name=".HeartMeter" />
         <activity android:name=".FrontActivity" />
         <activity android:name=".SignUp" />
         <activity android:name=".MainActivity"/>
@@ -67,18 +57,6 @@
 
         </activity>
 
-        <receiver
-            android:name=".AlarmReciever"
-            android:process=":remote" />
-        <receiver android:name=".BootWakeUp">
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-            </intent-filter>
-        </receiver>
-
-        <service
-            android:name=".push_notification"
-            android:exported="false" />
     </application>
 
 </manifest>

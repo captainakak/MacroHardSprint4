@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Jingyi Li\\Documents\\GitHub\\CS8803MAS\\MacroHardSprint4\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sk\\values-sk.xml",
+            "outputFile": "D:\\1GT\\2020 Fall\\CS 8813\\sprint4\\HealthCastle-master\\HealthCastle-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sk\\values-sk.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Jingyi Li\\.gradle\\caches\\transforms-2\\files-2.1\\e9e94577a8a8e15e5bd8df1dec21420f\\core-1.1.0\\res\\values-sk\\values-sk.xml",
+                    "source": "C:\\Users\\zhang\\.gradle\\caches\\transforms-2\\files-2.1\\e9e94577a8a8e15e5bd8df1dec21420f\\core-1.1.0\\res\\values-sk\\values-sk.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Jingyi Li\\.gradle\\caches\\transforms-2\\files-2.1\\3e2ff110dde51de247983aaef5104c67\\appcompat-1.1.0\\res\\values-sk\\values-sk.xml",
+                    "source": "C:\\Users\\zhang\\.gradle\\caches\\transforms-2\\files-2.1\\3e2ff110dde51de247983aaef5104c67\\appcompat-1.1.0\\res\\values-sk\\values-sk.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Jingyi Li\\.gradle\\caches\\transforms-2\\files-2.1\\5eeac2ebe4100ca0309c0bedeb1623e9\\jetified-play-services-base-16.0.1\\res\\values-sk\\values.xml",
+                    "source": "C:\\Users\\zhang\\.gradle\\caches\\transforms-2\\files-2.1\\bb2ebc9c39e91c810ab6f069d5c1fa45\\jetified-play-services-base-16.0.1\\res\\values-sk\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -55,7 +55,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Jingyi Li\\.gradle\\caches\\transforms-2\\files-2.1\\abc0d6936d2f46d73c22411faa6a7f69\\jetified-play-services-basement-16.1.0\\res\\values-sk\\values.xml",
+                    "source": "C:\\Users\\zhang\\.gradle\\caches\\transforms-2\\files-2.1\\33c2b446ac12bf14a756909f5f5a47ea\\jetified-play-services-basement-16.1.0\\res\\values-sk\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",

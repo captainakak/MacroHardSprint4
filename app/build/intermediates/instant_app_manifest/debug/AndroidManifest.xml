@@ -50,16 +50,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.npdevs.healthcastle.Emotions" />
-        <activity android:name="com.npdevs.healthcastle.SugarLevelGraph" />
-        <activity android:name="com.npdevs.healthcastle.BloodpressureMeasure" />
         <activity android:name="com.npdevs.healthcastle.SugarMeasure" />
-        <activity android:name="com.npdevs.healthcastle.Friends" />
-        <activity android:name="com.npdevs.healthcastle.Connections" />
         <activity android:name="com.npdevs.healthcastle.EditProfile" />
-        <activity android:name="com.npdevs.healthcastle.PhoneSearch" />
-        <activity android:name="com.npdevs.healthcastle.StepsGraph" />
-        <activity android:name="com.npdevs.healthcastle.CalorieGraph" />
         <activity android:name="com.npdevs.healthcastle.AddNewExercise" />
         <activity android:name="com.npdevs.healthcastle.AddNewFood" />
         <activity android:name="com.npdevs.healthcastle.CheckSafeSearch" />
@@ -67,10 +59,8 @@
         <activity android:name="com.npdevs.healthcastle.AddFood" />
         <activity android:name="com.npdevs.healthcastle.AddExerciseSearch" />
         <activity android:name="com.npdevs.healthcastle.AddExercise" />
-        <activity android:name="com.npdevs.healthcastle.HeartGraph" />
         <activity android:name="com.npdevs.healthcastle.About" />
         <activity android:name="com.npdevs.healthcastle.CheckSafe" />
-        <activity android:name="com.npdevs.healthcastle.HeartMeter" />
         <activity android:name="com.npdevs.healthcastle.FrontActivity" />
         <activity android:name="com.npdevs.healthcastle.SignUp" />
         <activity android:name="com.npdevs.healthcastle.MainActivity" />
@@ -79,20 +69,6 @@
         <activity android:name="com.npdevs.healthcastle.RegistActivity" />
         <activity android:name="com.npdevs.healthcastle.LoginActivity" >
         </activity>
-
-        <receiver
-            android:name="com.npdevs.healthcastle.AlarmReciever"
-            android:process=":remote" />
-        <receiver android:name="com.npdevs.healthcastle.BootWakeUp" >
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-            </intent-filter>
-        </receiver>
-
-        <service
-            android:name="com.npdevs.healthcastle.push_notification"
-            android:exported="false" />
-
         <activity
             android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
             android:excludeFromRecents="true"

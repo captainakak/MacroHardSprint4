@@ -1458,6 +1458,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable recipe
 drawable red_icon
 drawable rounded_edittext
 drawable rounded_edittext_states
@@ -1546,7 +1547,6 @@ id auto
 id barrier
 id beginning
 id blocking
-id bloodpressure
 id bottom
 id btnConfirm
 id btnConfirmProfile
@@ -1567,7 +1567,6 @@ id button7
 id button8
 id button9
 id buttonPanel
-id caloriestats
 id cancel_action
 id cancel_button
 id center
@@ -1585,7 +1584,6 @@ id clip_horizontal
 id clip_vertical
 id collapseActionView
 id confirm_button
-id connection
 id contact
 id container
 id content
@@ -1607,7 +1605,6 @@ id dialog_button
 id dimensions
 id direct
 id disableHome
-id doctors
 id dropdown_menu
 id editAge
 id editAimWeight
@@ -1655,8 +1652,6 @@ id ghost_view
 id gone
 id group_divider
 id groups
-id heartbeat
-id heartbeatstats
 id hideable
 id home
 id homeAsUp
@@ -1693,7 +1688,6 @@ id message
 id middle
 id mini
 id mobNumber
-id mobSearch
 id month_grid
 id month_navigation_bar
 id month_navigation_fragment_toggle
@@ -1805,12 +1799,10 @@ id src_over
 id standard
 id start
 id status_bar_latest_event_content
-id stepsstats
 id stretch
 id submenuarrow
 id submit_area
 id sugar
-id sugarstats
 id surfaceView
 id tabMode
 id tag_accessibility_actions

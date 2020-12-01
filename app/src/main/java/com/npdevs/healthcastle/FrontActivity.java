@@ -111,7 +111,7 @@ public class FrontActivity extends AppCompatActivity implements SensorEventListe
 
 		sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
 		loadUserData();
-		schedulealarm();
+//		schedulealarm();
 		loadModel();
 
 		int index = getFrontCameraId();
@@ -152,11 +152,11 @@ public class FrontActivity extends AppCompatActivity implements SensorEventListe
 			public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 				int id = item.getItemId();
 				switch (id) {
-					case R.id.heartbeat:
-						//Toast.makeText(FrontActivity.this, "Click finish when satisfied!",Toast.LENGTH_SHORT).show();
-						Intent intent = new Intent(FrontActivity.this, HeartMeter.class);
-						startActivity(intent);
-						return true;
+//					case R.id.heartbeat:
+//						//Toast.makeText(FrontActivity.this, "Click finish when satisfied!",Toast.LENGTH_SHORT).show();
+//						Intent intent = new Intent(FrontActivity.this, HeartMeter.class);
+//						startActivity(intent);
+//						return true;
 					case R.id.addfood:
 						//Toast.makeText(FrontActivity.this, "Settings... who got time for that?",Toast.LENGTH_SHORT).show();
 						Intent intent1 = new Intent(FrontActivity.this, AddNewFood.class);
@@ -167,46 +167,46 @@ public class FrontActivity extends AppCompatActivity implements SensorEventListe
 						Intent intent2 = new Intent(FrontActivity.this, AddNewExercise.class);
 						startActivity(intent2);
 						return true;
-					case R.id.heartbeatstats:
-						intent = new Intent(FrontActivity.this, HeartGraph.class);
-						intent.putExtra("MOB_NUMBER", MOB_NUMBER);
-						startActivity(intent);
-						return true;
-					case R.id.caloriestats:
-						intent = new Intent(FrontActivity.this, CalorieGraph.class);
-						intent.putExtra("MOB_NUMBER", MOB_NUMBER);
-						startActivity(intent);
-						return true;
-					case R.id.sugarstats:
-						intent = new Intent(FrontActivity.this, SugarLevelGraph.class);
-						intent.putExtra("MOB_NUMBER", MOB_NUMBER);
-						startActivity(intent);
-						return true;
-					case R.id.stepsstats:
-						intent = new Intent(FrontActivity.this, StepsGraph.class);
-						intent.putExtra("MOB_NUMBER", MOB_NUMBER);
-						startActivity(intent);
-						return true;
-					case R.id.mobSearch:
-						intent = new Intent(FrontActivity.this, PhoneSearch.class);
-						intent.putExtra("MOB_NUMBER", MOB_NUMBER);
-						startActivity(intent);
-						return true;
-					case R.id.connection:
-						intent = new Intent(FrontActivity.this, Connections.class);
-						intent.putExtra("MOB_NUMBER", MOB_NUMBER);
-						startActivity(intent);
-						return true;
-					case R.id.doctors:
-						intent = new Intent(FrontActivity.this, Friends.class);
-						intent.putExtra("MOB", MOB_NUMBER);
-						startActivity(intent);
-						return true;
+//					case R.id.heartbeatstats:
+//						intent = new Intent(FrontActivity.this, HeartGraph.class);
+//						intent.putExtra("MOB_NUMBER", MOB_NUMBER);
+//						startActivity(intent);
+//						return true;
+//					case R.id.caloriestats:
+//						intent = new Intent(FrontActivity.this, CalorieGraph.class);
+//						intent.putExtra("MOB_NUMBER", MOB_NUMBER);
+//						startActivity(intent);
+//						return true;
+//					case R.id.sugarstats:
+//						intent = new Intent(FrontActivity.this, SugarLevelGraph.class);
+//						intent.putExtra("MOB_NUMBER", MOB_NUMBER);
+//						startActivity(intent);
+//						return true;
+//					case R.id.stepsstats:
+//						intent = new Intent(FrontActivity.this, StepsGraph.class);
+//						intent.putExtra("MOB_NUMBER", MOB_NUMBER);
+//						startActivity(intent);
+//						return true;
+//					case R.id.mobSearch:
+//						intent = new Intent(FrontActivity.this, PhoneSearch.class);
+//						intent.putExtra("MOB_NUMBER", MOB_NUMBER);
+//						startActivity(intent);
+//						return true;
+//					case R.id.connection:
+//						intent = new Intent(FrontActivity.this, Connections.class);
+//						intent.putExtra("MOB_NUMBER", MOB_NUMBER);
+//						startActivity(intent);
+//						return true;
+//					case R.id.doctors:
+//						intent = new Intent(FrontActivity.this, Friends.class);
+//						intent.putExtra("MOB", MOB_NUMBER);
+//						startActivity(intent);
+//						return true;
 					case R.id.logout:
 						Toast.makeText(FrontActivity.this, "Logged out", Toast.LENGTH_SHORT).show();
 						clearTable();
 						saveTable();
-						intent = new Intent(FrontActivity.this, MainActivity.class);
+						Intent intent = new Intent(FrontActivity.this, MainActivity.class);
 						startActivity(intent);
 						finish();
 						return true;
@@ -215,7 +215,7 @@ public class FrontActivity extends AppCompatActivity implements SensorEventListe
 						startActivity(intent);
 						return true;
 					case R.id.feedback:
-						intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/ashu12chi/HealthCastle"));
+						intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/captainakak/MacroHardSprint4"));
 						startActivity(intent);
 						return true;
 					case R.id.sugar:
@@ -223,11 +223,11 @@ public class FrontActivity extends AppCompatActivity implements SensorEventListe
 						intent.putExtra("MOB_NUMBER", MOB_NUMBER);
 						startActivity(intent);
 						return true;
-					case R.id.bloodpressure:
-						intent = new Intent(FrontActivity.this, BloodpressureMeasure.class);
-						intent.putExtra("MOB_NUMBER", MOB_NUMBER);
-						startActivity(intent);
-						return true;
+//					case R.id.bloodpressure:
+//						intent = new Intent(FrontActivity.this, BloodpressureMeasure.class);
+//						intent.putExtra("MOB_NUMBER", MOB_NUMBER);
+//						startActivity(intent);
+//						return true;
 					default:
 						return true;
 				}
@@ -347,20 +347,20 @@ public class FrontActivity extends AppCompatActivity implements SensorEventListe
 		editor.apply();
 	}
 
-	private void schedulealarm() {
-
-		// Construct an intent that will execute the AlarmReceiver
-		Intent intent = new Intent(this, AlarmReciever.class);
-		// Create a PendingIntent to be triggered when the alarm goes off
-		final PendingIntent pIntent = PendingIntent.getBroadcast(this, AlarmReciever.REQUEST_CODE,
-				intent, PendingIntent.FLAG_UPDATE_CURRENT);
-		// Setup periodic alarm every every half hour from this point onwards
-		AlarmManager alarm = (AlarmManager) this.getSystemService(Context.ALARM_SERVICE);
-		// First parameter is the type: ELAPSED_REALTIME, ELAPSED_REALTIME_WAKEUP, RTC_WAKEUP
-		// Interval can be INTERVAL_FIFTEEN_MINUTES, INTERVAL_HALF_HOUR, INTERVAL_HOUR, INTERVAL_DAY
-		alarm.setInexactRepeating(AlarmManager.RTC_WAKEUP, SystemClock.elapsedRealtime(),
-				1000 * 29 * 60, pIntent);
-	}
+//	private void schedulealarm() {
+//
+//		// Construct an intent that will execute the AlarmReceiver
+//		Intent intent = new Intent(this, AlarmReciever.class);
+//		// Create a PendingIntent to be triggered when the alarm goes off
+//		final PendingIntent pIntent = PendingIntent.getBroadcast(this, AlarmReciever.REQUEST_CODE,
+//				intent, PendingIntent.FLAG_UPDATE_CURRENT);
+//		// Setup periodic alarm every every half hour from this point onwards
+//		AlarmManager alarm = (AlarmManager) this.getSystemService(Context.ALARM_SERVICE);
+//		// First parameter is the type: ELAPSED_REALTIME, ELAPSED_REALTIME_WAKEUP, RTC_WAKEUP
+//		// Interval can be INTERVAL_FIFTEEN_MINUTES, INTERVAL_HALF_HOUR, INTERVAL_HOUR, INTERVAL_DAY
+//		alarm.setInexactRepeating(AlarmManager.RTC_WAKEUP, SystemClock.elapsedRealtime(),
+//				1000 * 29 * 60, pIntent);
+//	}
 
 	private String readHeartbeat() {
 		SharedPreferences sharedPreferences = getSharedPreferences("heartbeats", MODE_PRIVATE);
@@ -502,40 +502,40 @@ public class FrontActivity extends AppCompatActivity implements SensorEventListe
 				startActivity(intent);
 				break;
 			}
-			if (str.toLowerCase().contains("search person")) {
-				Intent intent = new Intent(FrontActivity.this, PhoneSearch.class);
-				try {
-					intent.putExtra("SEARCH", str.substring(str.lastIndexOf("search person") + 14).trim().replaceAll(" ", ""));
-				} catch (Exception e) {
-					intent.putExtra("SEARCH", "");
-				}
-				intent.putExtra("MOB_NUMBER", MOB_NUMBER);
-				startActivity(intent);
-				break;
-			}
-			if (str.toLowerCase().contains("steps graph")) {
-				Intent intent = new Intent(FrontActivity.this, StepsGraph.class);
-				intent.putExtra("MOB_NUMBER", MOB_NUMBER);
-				startActivity(intent);
-				break;
-			}
-			if (str.toLowerCase().contains("heart graph") || str.toLowerCase().contains("heartbeat graph") || str.toLowerCase().contains("heart rate graph")) {
-				Intent intent = new Intent(FrontActivity.this, HeartGraph.class);
-				intent.putExtra("MOB_NUMBER", MOB_NUMBER);
-				startActivity(intent);
-				break;
-			}
-			if (str.toLowerCase().contains("measure heart")) {
-				Intent intent = new Intent(FrontActivity.this, HeartMeter.class);
-				startActivity(intent);
-				break;
-			}
-			if (str.toLowerCase().contains("food graph") || str.toLowerCase().contains("calorie graph")) {
-				Intent intent = new Intent(FrontActivity.this, CalorieGraph.class);
-				intent.putExtra("MOB_NUMBER", MOB_NUMBER);
-				startActivity(intent);
-				break;
-			}
+//			if (str.toLowerCase().contains("search person")) {
+//				Intent intent = new Intent(FrontActivity.this, PhoneSearch.class);
+//				try {
+//					intent.putExtra("SEARCH", str.substring(str.lastIndexOf("search person") + 14).trim().replaceAll(" ", ""));
+//				} catch (Exception e) {
+//					intent.putExtra("SEARCH", "");
+//				}
+//				intent.putExtra("MOB_NUMBER", MOB_NUMBER);
+//				startActivity(intent);
+//				break;
+//			}
+//			if (str.toLowerCase().contains("steps graph")) {
+//				Intent intent = new Intent(FrontActivity.this, StepsGraph.class);
+//				intent.putExtra("MOB_NUMBER", MOB_NUMBER);
+//				startActivity(intent);
+//				break;
+//			}
+//			if (str.toLowerCase().contains("heart graph") || str.toLowerCase().contains("heartbeat graph") || str.toLowerCase().contains("heart rate graph")) {
+//				Intent intent = new Intent(FrontActivity.this, HeartGraph.class);
+//				intent.putExtra("MOB_NUMBER", MOB_NUMBER);
+//				startActivity(intent);
+//				break;
+//			}
+//			if (str.toLowerCase().contains("measure heart")) {
+//				Intent intent = new Intent(FrontActivity.this, HeartMeter.class);
+//				startActivity(intent);
+//				break;
+//			}
+//			if (str.toLowerCase().contains("food graph") || str.toLowerCase().contains("calorie graph")) {
+//				Intent intent = new Intent(FrontActivity.this, CalorieGraph.class);
+//				intent.putExtra("MOB_NUMBER", MOB_NUMBER);
+//				startActivity(intent);
+//				break;
+//			}
 		}
 	}
 
@@ -543,49 +543,49 @@ public class FrontActivity extends AppCompatActivity implements SensorEventListe
 		textToSpeech.speak(String.valueOf(string), TextToSpeech.QUEUE_ADD, null);
 	}
 
-	private void checkFamilyHealth() {
-		final DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("users");
-		databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
-			@Override
-			public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-				Users user = dataSnapshot.child(MOB_NUMBER).getValue(Users.class);
-				assert user != null;
-				ArrayList<String> family = user.getFamily();
-				for (int i = 1; i < family.size(); i++) {
-					Users member = dataSnapshot.child(family.get(i)).getValue(Users.class);
-					assert member != null;
-					int sugar = 100, systole = 100;
-					if (member.getSugar().size() > 1)
-						sugar = member.getSugar().get(member.getSugar().size() - 1);
-					if (member.getBloodpressure().size() > 1) {
-						String heart = member.getBloodpressure().get(member.getBloodpressure().size() - 1);
-						systole = Integer.parseInt(heart.substring(heart.indexOf('-') + 1));
-					}
-					int depcount = 0;
-					ArrayList<String> emo = member.getEmotions();
-					int length = emo.size() - 1;
-					if (length >= 10) {
-						emo.remove(0);
-						for (int j = length - 10; j < length; j++) {
-							String s = emo.get(j);
-							if (s.equalsIgnoreCase("fear") || s.equalsIgnoreCase("angry") || s.equalsIgnoreCase("sad")) {
-								depcount++;
-							}
-						}
-					}
-					if (sugar > 120 || sugar < 55 || systole < 90 || systole > 180 || depcount >= 8) {
-						createNotificationChannel();
-						notification(family.get(i), member);
-					}
-				}
-			}
+//	private void checkFamilyHealth() {
+//		final DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("users");
+//		databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
+//			@Override
+//			public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+//				Users user = dataSnapshot.child(MOB_NUMBER).getValue(Users.class);
+//				assert user != null;
+//				ArrayList<String> family = user.getFamily();
+//				for (int i = 1; i < family.size(); i++) {
+//					Users member = dataSnapshot.child(family.get(i)).getValue(Users.class);
+//					assert member != null;
+//					int sugar = 100, systole = 100;
+//					if (member.getSugar().size() > 1)
+//						sugar = member.getSugar().get(member.getSugar().size() - 1);
+//					if (member.getBloodpressure().size() > 1) {
+//						String heart = member.getBloodpressure().get(member.getBloodpressure().size() - 1);
+//						systole = Integer.parseInt(heart.substring(heart.indexOf('-') + 1));
+//					}
+//					int depcount = 0;
+//					ArrayList<String> emo = member.getEmotions();
+//					int length = emo.size() - 1;
+//					if (length >= 10) {
+//						emo.remove(0);
+//						for (int j = length - 10; j < length; j++) {
+//							String s = emo.get(j);
+//							if (s.equalsIgnoreCase("fear") || s.equalsIgnoreCase("angry") || s.equalsIgnoreCase("sad")) {
+//								depcount++;
+//							}
+//						}
+//					}
+//					if (sugar > 120 || sugar < 55 || systole < 90 || systole > 180 || depcount >= 8) {
+//						createNotificationChannel();
+//						notification(family.get(i), member);
+//					}
+//				}
+//			}
 
-			@Override
-			public void onCancelled(@NonNull DatabaseError databaseError) {
-				Log.e("NSP", "Some error occurred while checking person connections");
-			}
-		});
-	}
+//			@Override
+//			public void onCancelled(@NonNull DatabaseError databaseError) {
+//				Log.e("NSP", "Some error occurred while checking person connections");
+//			}
+//		});
+//	}
 
 	private void createNotificationChannel() {
 		// Create the NotificationChannel, but only on API 26+ because
@@ -605,26 +605,26 @@ public class FrontActivity extends AppCompatActivity implements SensorEventListe
 		}
 	}
 
-	@RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
-	private void notification(String mob, Users user) {
-		Intent intent = new Intent(this, Friends.class);
-		intent.putExtra("MOB", mob);
-		PendingIntent pendingintent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
-		//PendingIntent pendingintent = stackBuilder.getPendingIntent(0 , PendingIntent.FLAG_UPDATE_CURRENT);
-		NotificationCompat.Builder builder = new NotificationCompat.Builder(this, "Unhealthy person notify")
-				.setSmallIcon(R.mipmap.ic_launcher_round)
-				.setAutoCancel(true)
-				.setContentTitle(user.getName() + " is unhealthy")
-				.setContentText("Large vary from standard data")
-				.setDefaults(NotificationCompat.DEFAULT_VIBRATE)
-				.setPriority(NotificationCompat.PRIORITY_MAX)
-				.setStyle(new NotificationCompat.BigTextStyle()
-						.bigText("Tap to see stats..."))
-				.setContentIntent(pendingintent);
-		NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
-// notificationId is a unique int for each notification that you must define
-		notificationManager.notify(12, builder.build());
-	}
+//	@RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
+//	private void notification(String mob, Users user) {
+//		Intent intent = new Intent(this, Friends.class);
+//		intent.putExtra("MOB", mob);
+//		PendingIntent pendingintent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+//		//PendingIntent pendingintent = stackBuilder.getPendingIntent(0 , PendingIntent.FLAG_UPDATE_CURRENT);
+//		NotificationCompat.Builder builder = new NotificationCompat.Builder(this, "Unhealthy person notify")
+//				.setSmallIcon(R.mipmap.ic_launcher_round)
+//				.setAutoCancel(true)
+//				.setContentTitle(user.getName() + " is unhealthy")
+//				.setContentText("Large vary from standard data")
+//				.setDefaults(NotificationCompat.DEFAULT_VIBRATE)
+//				.setPriority(NotificationCompat.PRIORITY_MAX)
+//				.setStyle(new NotificationCompat.BigTextStyle()
+//						.bigText("Tap to see stats..."))
+//				.setContentIntent(pendingintent);
+//		NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
+//// notificationId is a unique int for each notification that you must define
+//		notificationManager.notify(12, builder.build());
+//	}
 
 	private void loadModel() {
 
