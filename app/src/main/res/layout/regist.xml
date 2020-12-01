@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true">
+
+    <!-- input phone -->
+    <EditText
+        android:id="@+id/editPhone"
+        style="@style/textstyle"
+        android:layout_width="fill_parent"
+        android:background="@drawable/rounded_edittext_states"
+        android:hint="Email"
+        android:lines="1"
+        android:singleLine="true" />
+    <!-- input password -->
+    <EditText
+        android:id="@+id/editPwd"
+        style="@style/textstyle"
+        android:layout_width="fill_parent"
+        android:background="@drawable/rounded_edittext_states"
+        android:hint="Password"
+        android:lines="1"
+        android:maxLength="16"
+        android:password="true"
+        android:singleLine="true" />
+    <!-- the regist button -->
+    <Button
+        android:id="@+id/btnRegist"
+        style="@style/textstyle"
+        android:layout_width="385dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mybutton"
+        android:onClick="OnMyRegistClick"
+        android:text="@string/regist"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="18sp"
+        app:strokeColor="@color/blue"
+        app:strokeWidth="2.5dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <!-- forget password button -->
+
+        <!-- start register button -->
+        <TextView
+            android:id="@+id/txtStartLogin1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="OnMyLoginClickClick"
+            android:text="@string/login"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </RelativeLayout>
+</LinearLayout>

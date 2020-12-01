@@ -15,4 +15,14 @@
     <color name="mapboxRed">#b43b71</color>
     <color name="red">#FF0000</color>
     <color name="white">#FFFFFF</color>
+
+    <color name="white1">#ffffffff</color>
+    <color name="black">#000</color>
+    <color name="blue">#1ba0e1</color>
+    <color name="blue1">#0c92d4</color>
+    <color name="transparent">#00000000</color>
+    <color name="main_tab_text_color">#000000</color>
+
+    <color name="detail_income">#88cc44</color>
+    <color name="detail_payout">#ff6600</color>
 </resources>

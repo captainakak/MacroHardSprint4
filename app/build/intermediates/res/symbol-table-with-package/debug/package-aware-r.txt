@@ -756,6 +756,9 @@ color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
 color background_material_light
+color black
+color blue
+color blue1
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -822,6 +825,8 @@ color design_fab_stroke_top_inner_color
 color design_fab_stroke_top_outer_color
 color design_icon_tint
 color design_snackbar_background_color
+color detail_income
+color detail_payout
 color dim_foreground_disabled_material_dark
 color dim_foreground_disabled_material_light
 color dim_foreground_material_dark
@@ -833,6 +838,7 @@ color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color ic_launcher_background
+color main_tab_text_color
 color mapboxBlue
 color mapboxGrayLight
 color mapboxPink
@@ -938,7 +944,9 @@ color test_mtrl_calendar_day_selected
 color text_field_background
 color tooltip_background_dark
 color tooltip_background_light
+color transparent
 color white
+color white1
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -1358,6 +1366,7 @@ drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
 drawable back
+drawable back2
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -1385,6 +1394,7 @@ drawable common_google_signin_btn_text_light
 drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
+drawable cycleanytext_shape
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
@@ -1424,6 +1434,7 @@ drawable ic_restaurant_black_24dp
 drawable ic_transfer_within_a_station_black_24dp
 drawable ic_whatshot_black_24dp
 drawable images
+drawable logo
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
 drawable mtrl_ic_arrow_drop_down
@@ -1433,6 +1444,7 @@ drawable mtrl_ic_error
 drawable mtrl_popupmenu_background
 drawable mtrl_popupmenu_background_dark
 drawable mtrl_tabs_default_indicator
+drawable mybutton
 drawable navigation_empty_icon
 drawable notification_action_background
 drawable notification_bg
@@ -1448,6 +1460,9 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable recipe
 drawable red_icon
+drawable rounded_edittext
+drawable rounded_edittext_states
+drawable rounded_focused
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -1534,7 +1549,13 @@ id beginning
 id blocking
 id bloodpressure
 id bottom
+id btnConfirm
+id btnConfirmProfile
+id btnLogin
+id btnProfile
+id btnRegist
 id button
+id button10
 id button11
 id button12
 id button13
@@ -1589,6 +1610,13 @@ id direct
 id disableHome
 id doctors
 id dropdown_menu
+id editAge
+id editAimWeight
+id editGender
+id editHeight
+id editPhone
+id editPwd
+id editResPwd
 id editText
 id editText1
 id editText10
@@ -1605,6 +1633,7 @@ id editText6
 id editText7
 id editText8
 id editText9
+id editWeight
 id edit_query
 id end
 id end_padder
@@ -1635,6 +1664,9 @@ id homeAsUp
 id icon
 id icon_group
 id icon_only
+id id_circle_menu_item_center
+id id_circle_menu_item_image
+id id_circle_menu_item_text
 id ifRoom
 id image
 id imageView
@@ -1843,6 +1875,14 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id txtAge
+id txtAimWeight
+id txtForgetPwd
+id txtGender
+id txtHeight
+id txtStartLogin1
+id txtStartRegist
+id txtWeight
 id unchecked
 id uniform
 id unlabeled
@@ -1958,6 +1998,8 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout item_main_feature
 layout item_main_feature1
+layout login
+layout mainpage
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
@@ -2002,6 +2044,9 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout profile
+layout regist
+layout res_password
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -2019,6 +2064,7 @@ layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
 menu menu_nav
+mipmap bg
 mipmap ic_launcher
 mipmap ic_launcher_foreground
 mipmap ic_launcher_round
@@ -2052,9 +2098,13 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string aboutUs
+string action_settings
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
+string cancel
+string category_report_tab
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
@@ -2078,19 +2128,34 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
+string confirm
+string count
+string count_des
 string default_web_client_id
+string detail_tab
+string dialog_memo_cancle
+string dialog_memo_ok
+string dialog_memo_title
+string edit_in
+string edit_message
+string edit_out
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string firebase_database_url
+string forgetPwd
 string gcm_defaultSenderId
 string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
+string hello_world
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
+string input_message
+string jianjie
+string login
 string mtrl_badge_numberless_content_description
 string mtrl_chip_close_icon_content_description
 string mtrl_exceed_max_badge_number_suffix
@@ -2129,8 +2194,22 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string project_id
+string regist
+string resPwd
+string save
+string save_message
 string search_menu_title
+string setting
+string setting_des
+string spn_prompt_account
+string spn_prompt_category
+string spn_prompt_corporation
+string spn_prompt_project
+string spn_prompt_subcategory
+string startRegist
 string status_bar_notification_info_overflow
+string wish
+string wish_des
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog
@@ -2818,6 +2897,7 @@ style Widget_MaterialComponents_Toolbar_Primary
 style Widget_MaterialComponents_Toolbar_PrimarySurface
 style Widget_MaterialComponents_Toolbar_Surface
 style Widget_Support_CoordinatorLayout
+style textstyle
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Height(cm)"
+        android:textColor="@color/blue"
+        android:textSize="20sp" />
+    <EditText
+android:id="@+id/editHeight"
+style="@style/textstyle"
+android:layout_width="fill_parent"
+android:background="@drawable/rounded_edittext_states"
+android:hint="Height"
+android:lines="1"
+android:singleLine="true" />
+    <TextView
+        android:id="@+id/txtWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Current Weight(lb)"
+        android:textColor="@color/blue"
+        android:textSize="20sp" />
+    <EditText
+        android:id="@+id/editWeight"
+        style="@style/textstyle"
+        android:layout_width="fill_parent"
+        android:background="@drawable/rounded_edittext_states"
+        android:hint="Weight"
+        android:lines="1"
+        android:singleLine="true" />
+    <TextView
+        android:id="@+id/txtAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Age"
+        android:textColor="@color/blue"
+        android:textSize="20sp" />
+    <EditText
+        android:id="@+id/editAge"
+        style="@style/textstyle"
+        android:layout_width="fill_parent"
+        android:background="@drawable/rounded_edittext_states"
+        android:hint="Age"
+        android:lines="1"
+        android:singleLine="true" />
+    <TextView
+        android:id="@+id/txtGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Gender(F/M)"
+        android:textColor="@color/blue"
+        android:textSize="20sp" />
+    <EditText
+        android:id="@+id/editGender"
+        style="@style/textstyle"
+        android:layout_width="fill_parent"
+        android:background="@drawable/rounded_edittext_states"
+        android:hint="F or M"
+        android:lines="1"
+        android:singleLine="true" />
+    <TextView
+        android:id="@+id/txtAimWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Target Weight(lb)"
+        android:textColor="@color/blue"
+        android:textSize="20sp" />
+    <EditText
+        android:id="@+id/editAimWeight"
+        style="@style/textstyle"
+        android:layout_width="fill_parent"
+        android:background="@drawable/rounded_edittext_states"
+        android:hint="Target Weight"
+        android:lines="1"
+        android:singleLine="true" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="100dp" />
+
+
+    <Button
+        android:id="@+id/btnConfirmProfile"
+        style="@style/textstyle"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mybutton"
+        android:onClick="OnMyLoginClick"
+        android:text="Confirm Profile"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="18sp"
+        app:strokeColor="@color/blue"
+        app:strokeWidth="2.5dp" />
+</LinearLayout>

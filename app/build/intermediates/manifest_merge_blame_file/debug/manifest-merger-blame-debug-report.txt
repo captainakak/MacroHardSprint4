@@ -56,19 +56,19 @@
 29-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:23:19-67
 30
 31    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-31-->[com.google.firebase:firebase-database:16.0.4] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\940f832f4489da3cd1e561e37b16b15c\jetified-firebase-database-16.0.4\AndroidManifest.xml:22:5-79
-31-->[com.google.firebase:firebase-database:16.0.4] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\940f832f4489da3cd1e561e37b16b15c\jetified-firebase-database-16.0.4\AndroidManifest.xml:22:22-76
+31-->[com.google.firebase:firebase-database:16.0.4] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\62d00f208ec43600796a92c0ba1d3a11\jetified-firebase-database-16.0.4\AndroidManifest.xml:22:5-79
+31-->[com.google.firebase:firebase-database:16.0.4] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\62d00f208ec43600796a92c0ba1d3a11\jetified-firebase-database-16.0.4\AndroidManifest.xml:22:22-76
 32    <uses-permission android:name="android.permission.INTERNET" />
-32-->[com.google.firebase:firebase-database:16.0.4] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\940f832f4489da3cd1e561e37b16b15c\jetified-firebase-database-16.0.4\AndroidManifest.xml:23:5-67
-32-->[com.google.firebase:firebase-database:16.0.4] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\940f832f4489da3cd1e561e37b16b15c\jetified-firebase-database-16.0.4\AndroidManifest.xml:23:22-64
+32-->[com.google.firebase:firebase-database:16.0.4] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\62d00f208ec43600796a92c0ba1d3a11\jetified-firebase-database-16.0.4\AndroidManifest.xml:23:5-67
+32-->[com.google.firebase:firebase-database:16.0.4] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\62d00f208ec43600796a92c0ba1d3a11\jetified-firebase-database-16.0.4\AndroidManifest.xml:23:22-64
 33    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 34
 35    <application
-35-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:25:5-76:19
+35-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:25:5-82:19
 36        android:allowBackup="true"
 36-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:26:9-35
 37        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-37-->[androidx.core:core:1.1.0] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\9b282167d5edf2ce15b1570bf9b055c0\core-1.1.0\AndroidManifest.xml:24:18-86
+37-->[androidx.core:core:1.1.0] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\e9e94577a8a8e15e5bd8df1dec21420f\core-1.1.0\AndroidManifest.xml:24:18-86
 38        android:debuggable="true"
 39        android:icon="@mipmap/ic_launcher"
 39-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:27:9-43
@@ -165,88 +165,101 @@
 74-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:61:9-44
 74-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:61:19-41
 75        <activity android:name="com.npdevs.healthcastle.MainActivity" />
-75-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:62:9-59
+75-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:62:9-49
 75-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:62:19-47
-76
-77        <receiver
-77-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:64:9-66:41
-78            android:name="com.npdevs.healthcastle.AlarmReciever"
-78-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:65:13-42
-79            android:process=":remote" />
-79-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:66:13-38
-80        <receiver android:name="com.npdevs.healthcastle.BootWakeUp" >
-80-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:67:9-71:20
-80-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:67:19-45
-81            <intent-filter>
-81-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:68:13-70:29
-82                <action android:name="android.intent.action.BOOT_COMPLETED" />
-82-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:69:17-79
-82-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:69:25-76
-83            </intent-filter>
-84        </receiver>
-85
-86        <service
-86-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:73:9-75:40
-87            android:name="com.npdevs.healthcastle.push_notification"
-87-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:74:13-46
-88            android:exported="false" />
-88-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:75:13-37
-89
-90        <activity
-90-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\467aa0d58d128dc6f9c2f8ba87a55bcd\jetified-firebase-auth-16.0.5\AndroidManifest.xml:24:9-31:50
-91            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
-91-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\467aa0d58d128dc6f9c2f8ba87a55bcd\jetified-firebase-auth-16.0.5\AndroidManifest.xml:25:13-85
-92            android:excludeFromRecents="true"
-92-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\467aa0d58d128dc6f9c2f8ba87a55bcd\jetified-firebase-auth-16.0.5\AndroidManifest.xml:26:13-46
-93            android:exported="true"
-93-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\467aa0d58d128dc6f9c2f8ba87a55bcd\jetified-firebase-auth-16.0.5\AndroidManifest.xml:27:13-36
-94            android:launchMode="singleTask"
-94-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\467aa0d58d128dc6f9c2f8ba87a55bcd\jetified-firebase-auth-16.0.5\AndroidManifest.xml:28:13-44
-95            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
-95-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\467aa0d58d128dc6f9c2f8ba87a55bcd\jetified-firebase-auth-16.0.5\AndroidManifest.xml:29:13-102
-96            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-96-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\467aa0d58d128dc6f9c2f8ba87a55bcd\jetified-firebase-auth-16.0.5\AndroidManifest.xml:30:13-72
-97
-98        <service
-98-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\467aa0d58d128dc6f9c2f8ba87a55bcd\jetified-firebase-auth-16.0.5\AndroidManifest.xml:33:9-39:19
-99            android:name="com.google.firebase.components.ComponentDiscoveryService"
-99-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\467aa0d58d128dc6f9c2f8ba87a55bcd\jetified-firebase-auth-16.0.5\AndroidManifest.xml:34:13-84
-100            android:exported="false" >
-100-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\467aa0d58d128dc6f9c2f8ba87a55bcd\jetified-firebase-auth-16.0.5\AndroidManifest.xml:35:13-37
-101            <meta-data
-101-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\467aa0d58d128dc6f9c2f8ba87a55bcd\jetified-firebase-auth-16.0.5\AndroidManifest.xml:36:13-38:85
-102                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-102-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\467aa0d58d128dc6f9c2f8ba87a55bcd\jetified-firebase-auth-16.0.5\AndroidManifest.xml:37:17-109
-103                android:value="com.google.firebase.components.ComponentRegistrar" />
-103-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\467aa0d58d128dc6f9c2f8ba87a55bcd\jetified-firebase-auth-16.0.5\AndroidManifest.xml:38:17-82
-104        </service>
-105
-106        <activity
-106-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\c8cebe554d63bcfedc82802360b84b34\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
-107            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-107-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\c8cebe554d63bcfedc82802360b84b34\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
-108            android:exported="false"
-108-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\c8cebe554d63bcfedc82802360b84b34\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
-109            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-109-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\c8cebe554d63bcfedc82802360b84b34\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
+76        <activity android:name="com.npdevs.healthcastle.ProfileActivity" />
+76-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:63:9-52
+76-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:63:19-50
+77        <activity android:name="com.npdevs.healthcastle.ResPwdActivity" />
+77-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:64:9-51
+77-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:64:19-49
+78        <activity android:name="com.npdevs.healthcastle.RegistActivity" />
+78-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:65:9-51
+78-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:65:19-49
+79        <activity android:name="com.npdevs.healthcastle.LoginActivity" >
+79-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:66:9-68:20
+79-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:66:19-48
+80        </activity>
+81
+82        <receiver
+82-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:70:9-72:41
+83            android:name="com.npdevs.healthcastle.AlarmReciever"
+83-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:71:13-42
+84            android:process=":remote" />
+84-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:72:13-38
+85        <receiver android:name="com.npdevs.healthcastle.BootWakeUp" >
+85-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:73:9-77:20
+85-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:73:19-45
+86            <intent-filter>
+86-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:74:13-76:29
+87                <action android:name="android.intent.action.BOOT_COMPLETED" />
+87-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:75:17-79
+87-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:75:25-76
+88            </intent-filter>
+89        </receiver>
+90
+91        <service
+91-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:79:9-81:40
+92            android:name="com.npdevs.healthcastle.push_notification"
+92-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:80:13-46
+93            android:exported="false" />
+93-->D:\1GT\2020 Fall\CS 8813\sprint4\HealthCastle-master\HealthCastle-master\app\src\main\AndroidManifest.xml:81:13-37
+94
+95        <activity
+95-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:24:9-31:50
+96            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+96-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:25:13-85
+97            android:excludeFromRecents="true"
+97-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:26:13-46
+98            android:exported="true"
+98-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:27:13-36
+99            android:launchMode="singleTask"
+99-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:28:13-44
+100            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+100-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:29:13-102
+101            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+101-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:30:13-72
+102
+103        <service
+103-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:33:9-39:19
+104            android:name="com.google.firebase.components.ComponentDiscoveryService"
+104-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:34:13-84
+105            android:exported="false" >
+105-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:35:13-37
+106            <meta-data
+106-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:36:13-38:85
+107                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+107-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:37:17-109
+108                android:value="com.google.firebase.components.ComponentRegistrar" />
+108-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:38:17-82
+109        </service>
 110
-111        <provider
-111-->[com.google.firebase:firebase-common:16.0.3] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\03e90ec3cba946da1540e2ceea25f5a7\jetified-firebase-common-16.0.3\AndroidManifest.xml:10:9-14:39
-112            android:name="com.google.firebase.provider.FirebaseInitProvider"
-112-->[com.google.firebase:firebase-common:16.0.3] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\03e90ec3cba946da1540e2ceea25f5a7\jetified-firebase-common-16.0.3\AndroidManifest.xml:11:13-77
-113            android:authorities="com.npdevs.healthcastle.firebaseinitprovider"
-113-->[com.google.firebase:firebase-common:16.0.3] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\03e90ec3cba946da1540e2ceea25f5a7\jetified-firebase-common-16.0.3\AndroidManifest.xml:12:13-72
-114            android:exported="false"
-114-->[com.google.firebase:firebase-common:16.0.3] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\03e90ec3cba946da1540e2ceea25f5a7\jetified-firebase-common-16.0.3\AndroidManifest.xml:13:13-37
-115            android:initOrder="100" />
-115-->[com.google.firebase:firebase-common:16.0.3] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\03e90ec3cba946da1540e2ceea25f5a7\jetified-firebase-common-16.0.3\AndroidManifest.xml:14:13-36
-116
-117        <meta-data
-117-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\87816256ddd2931d55b5896aac6fc412\jetified-play-services-basement-16.1.0\AndroidManifest.xml:23:9-25:69
-118            android:name="com.google.android.gms.version"
-118-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\87816256ddd2931d55b5896aac6fc412\jetified-play-services-basement-16.1.0\AndroidManifest.xml:24:13-58
-119            android:value="@integer/google_play_services_version" />
-119-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\87816256ddd2931d55b5896aac6fc412\jetified-play-services-basement-16.1.0\AndroidManifest.xml:25:13-66
-120    </application>
+111        <activity
+111-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\bb2ebc9c39e91c810ab6f069d5c1fa45\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
+112            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+112-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\bb2ebc9c39e91c810ab6f069d5c1fa45\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
+113            android:exported="false"
+113-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\bb2ebc9c39e91c810ab6f069d5c1fa45\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
+114            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+114-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\bb2ebc9c39e91c810ab6f069d5c1fa45\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
+115
+116        <provider
+116-->[com.google.firebase:firebase-common:16.0.3] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\bc7e6160d3d297fa4db63ec5861c586a\jetified-firebase-common-16.0.3\AndroidManifest.xml:10:9-14:39
+117            android:name="com.google.firebase.provider.FirebaseInitProvider"
+117-->[com.google.firebase:firebase-common:16.0.3] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\bc7e6160d3d297fa4db63ec5861c586a\jetified-firebase-common-16.0.3\AndroidManifest.xml:11:13-77
+118            android:authorities="com.npdevs.healthcastle.firebaseinitprovider"
+118-->[com.google.firebase:firebase-common:16.0.3] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\bc7e6160d3d297fa4db63ec5861c586a\jetified-firebase-common-16.0.3\AndroidManifest.xml:12:13-72
+119            android:exported="false"
+119-->[com.google.firebase:firebase-common:16.0.3] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\bc7e6160d3d297fa4db63ec5861c586a\jetified-firebase-common-16.0.3\AndroidManifest.xml:13:13-37
+120            android:initOrder="100" />
+120-->[com.google.firebase:firebase-common:16.0.3] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\bc7e6160d3d297fa4db63ec5861c586a\jetified-firebase-common-16.0.3\AndroidManifest.xml:14:13-36
 121
-122</manifest>
+122        <meta-data
+122-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\33c2b446ac12bf14a756909f5f5a47ea\jetified-play-services-basement-16.1.0\AndroidManifest.xml:23:9-25:69
+123            android:name="com.google.android.gms.version"
+123-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\33c2b446ac12bf14a756909f5f5a47ea\jetified-play-services-basement-16.1.0\AndroidManifest.xml:24:13-58
+124            android:value="@integer/google_play_services_version" />
+124-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\33c2b446ac12bf14a756909f5f5a47ea\jetified-play-services-basement-16.1.0\AndroidManifest.xml:25:13-66
+125    </application>
+126
+127</manifest>

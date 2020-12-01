@@ -59,7 +59,13 @@
         <activity android:name=".HeartMeter" />
         <activity android:name=".FrontActivity" />
         <activity android:name=".SignUp" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".ProfileActivity"/>
+        <activity android:name=".ResPwdActivity"/>
+        <activity android:name=".RegistActivity"/>
+        <activity android:name=".LoginActivity">
+
+        </activity>
 
         <receiver
             android:name=".AlarmReciever"

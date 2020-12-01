@@ -4,7 +4,7 @@
             "outputFile": "D:\\1GT\\2020 Fall\\CS 8813\\sprint4\\HealthCastle-master\\HealthCastle-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\zhang\\.gradle\\caches\\transforms-2\\files-2.1\\dbe493a215c12b16b842e729f6d7f5f8\\appcompat-1.1.0\\res\\values-night-v8\\values-night-v8.xml",
+                    "source": "C:\\Users\\zhang\\.gradle\\caches\\transforms-2\\files-2.1\\3e2ff110dde51de247983aaef5104c67\\appcompat-1.1.0\\res\\values-night-v8\\values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\zhang\\.gradle\\caches\\transforms-2\\files-2.1\\115f62c322fd91f240639846b2f0ca47\\material-1.1.0-beta01\\res\\values-night-v8\\values-night-v8.xml",
+                    "source": "C:\\Users\\zhang\\.gradle\\caches\\transforms-2\\files-2.1\\1fae9c91ed995797a25542a971b8ed88\\material-1.1.0-beta01\\res\\values-night-v8\\values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

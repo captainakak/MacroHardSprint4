@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/logo"
+    android:gravity="bottom"
+    android:orientation="vertical">
+<!--<androidx.constraintlayout.widget.ConstraintLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:background="@drawable/logo"-->
+<!--    android:gravity="bottom"-->
+<!--    tools:context=".SplashScreen">-->
+
+    <!-- input account -->
+
+    <EditText
+        android:id="@+id/editPhone"
+        style="@style/textstyle"
+        android:layout_width="fill_parent"
+        android:background="@drawable/rounded_edittext_states"
+        android:hint="Email"
+        android:lines="1"
+        android:singleLine="true" />
+    <!-- input pwd -->
+    <EditText
+        android:id="@+id/editPwd"
+        style="@style/textstyle"
+        android:layout_width="fill_parent"
+        android:background="@drawable/rounded_edittext_states"
+        android:hint="Password"
+        android:lines="1"
+        android:maxLength="16"
+        android:password="true"
+        android:singleLine="true" />
+    <!-- the login button -->
+    <Button
+        android:id="@+id/btnLogin"
+        style="@style/textstyle"
+        android:layout_width="383dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mybutton"
+        android:onClick="OnMyLoginClick"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="18sp"
+        app:strokeColor="@color/blue"
+        app:strokeWidth="2.5dp" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <!-- forget password button -->
+        <TextView
+            android:id="@+id/txtForgetPwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="OnMyResPwdClick"
+            android:text="@string/forgetPwd"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+        <!-- start register button -->
+        <TextView
+            android:id="@+id/txtStartRegist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="OnMyRegistClick"
+            android:text="@string/startRegist"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+</LinearLayout>

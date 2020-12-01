@@ -2,4 +2,48 @@
     <string name="app_name">GOGO HEALTH</string>
     <string name="Open">Open</string>
     <string name="Close">Close</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="spn_prompt_category">Category</string>
+    <string name="spn_prompt_subcategory">Sub Category</string>
+    <string name="spn_prompt_account">Account</string>
+    <string name="spn_prompt_corporation">Merchant</string>
+    <string name="spn_prompt_project">Project</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="aboutUs">About Us</string>
+    <string name="jianjie">Team Member: Jingyi Li and Xinyi Zhang</string>
+
+    <string name="login">Login</string>
+    <string name="forgetPwd">Forget Password</string>
+    <string name="startRegist">Start Register</string>
+    <string name="regist">Register</string>
+    <string name="resPwd">Reset Password</string>
+    <string name="confirm">Confirm</string>
+
+    <string name="detail_tab">Detail</string>
+    <string name="category_report_tab">Category Report</string>
+
+    <string name="setting">Settings</string>
+    <string name="setting_des">This feature is under development</string>
+
+    <string name="wish">Wish List</string>
+    <string name="wish_des">This feature is under development</string>
+
+    <string name="count">Statistics</string>
+    <string name="count_des">This feature is under development</string>
+
+    <!-- memo——MyDialog -->
+    <string name="dialog_memo_title">Remarks</string>
+    <string name="dialog_memo_ok">Save</string>
+    <string name="dialog_memo_cancle">Cancel</string>
+
+    <!-- TransactionTabActivity -->
+    <string name="input_message">Please fill in amounts</string>
+    <string name="edit_message">Edit success</string>
+    <string name="save_message">Save success</string>
+    <string name="edit_in">Edit income</string>
+    <string name="edit_out">Edit outcome</string>
 </resources>

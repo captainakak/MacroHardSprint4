@@ -12,7 +12,7 @@
         android:layout_height="match_parent">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/button10"
             android:layout_width="170dp"
             android:layout_height="49dp"
             android:backgroundTint="#e2edc1"
@@ -25,6 +25,23 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button4"
             app:layout_constraintVertical_bias="0.114"
+            app:strokeColor="#89b31f"
+            app:strokeWidth="2.5dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="170dp"
+            android:layout_height="49dp"
+            android:backgroundTint="#e2edc1"
+            android:shadowColor="#5e8c06"
+            android:text="Take Photo"
+            android:textColor="#739f13"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button4"
+            app:layout_constraintVertical_bias="0.478"
             app:strokeColor="#89b31f"
             app:strokeWidth="2.5dp" />
 
