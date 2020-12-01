@@ -20,9 +20,9 @@ import android.hardware.Camera;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.SystemClock;
 import android.speech.RecognizerIntent;
 import android.speech.tts.TextToSpeech;
+import android.speech.tts.TextToSpeech.*;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.SurfaceHolder;
@@ -49,13 +49,12 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.npdevs.healthcastle.predictivemodels.Classification;
-import com.npdevs.healthcastle.predictivemodels.TensorFlowClassifier;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Locale;
 
-public class FrontActivity extends AppCompatActivity implements TextToSpeech.OnInitListener, SurfaceHolder.Callback {
+public class FrontActivity extends AppCompatActivity implements OnInitListener, SurfaceHolder.Callback {
 	static final int PIXEL_WIDTH = 48;
 	private static boolean FIRST_TIME = true;
 	boolean running = false;
@@ -69,7 +68,6 @@ public class FrontActivity extends AppCompatActivity implements TextToSpeech.OnI
 	@SuppressWarnings( "deprecation" )
 	Camera.Parameters parameters;
 	Bitmap bmp;
-	TensorFlowClassifier classifier;
 	private TextView maxCalorie, consumedCalorie, burntCalorie, allowedCalorie, steps;
 	private Button checkSafe, addFood, addExercise, takePhoto;
 	private DatabaseHelper databaseHelper;
@@ -104,8 +102,6 @@ public class FrontActivity extends AppCompatActivity implements TextToSpeech.OnI
 		//checkFamilyHealth();
 		FIRST_TIME = true;
 		loadUserData();
-//		schedulealarm();
-		loadModel();
 
 		int index = getFrontCameraId();
 		if (index == -1) {
@@ -230,20 +226,19 @@ public class FrontActivity extends AppCompatActivity implements TextToSpeech.OnI
 
 		textToSpeech = new TextToSpeech(this, this);
 
-		Button button = findViewById(R.id.button2);
+//		Button button = findViewById(R.id.button2);
+//
+//		button.setOnClickListener(new View.OnClickListener() {
+//			@Override
+//			public void onClick(View v) {
+//				Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
+//				intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
+//				intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.ENGLISH);
+//				startActivityForResult(intent, 10);
+//			}
+//		});
 
-		button.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
-				intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
-				intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.ENGLISH);
-				startActivityForResult(intent, 10);
-			}
-		});
-
-
-//		maxCalorie = findViewById(R.id.textView2);
+		maxCalorie = findViewById(R.id.textView30);
 		consumedCalorie = findViewById(R.id.textView4);
 		burntCalorie = findViewById(R.id.textView6);
 		allowedCalorie = findViewById(R.id.textView8);
@@ -260,7 +255,7 @@ public class FrontActivity extends AppCompatActivity implements TextToSpeech.OnI
 			double bmr = 88.362 + (13.397 * weight) + (4.799 * height) - (5.677 * age);
 			bmr = bmr * 1.2;
 			int bmr1 = (int) bmr;
-//			maxCalorie.setText(bmr1 + "");
+			maxCalorie.setText(bmr1 + "");
 			int x = Integer.parseInt(burntCalorie.getText().toString());
 			int y = Integer.parseInt(consumedCalorie.getText().toString());
 			allowedCalorie.setText(bmr1 + x - y + "");
@@ -269,7 +264,7 @@ public class FrontActivity extends AppCompatActivity implements TextToSpeech.OnI
 			double bmr = 447.593 + (9.247 * weight) + (3.098 * height) - (4.330 * age);
 			bmr = bmr * 1.2;
 			int bmr1 = (int) bmr;
-//			maxCalorie.setText(bmr1 + "");
+			maxCalorie.setText(bmr1 + "");
 			int x = Integer.parseInt(burntCalorie.getText().toString());
 			int y = Integer.parseInt(consumedCalorie.getText().toString());
 			allowedCalorie.setText(bmr1 + x - y + "");
@@ -612,24 +607,6 @@ public class FrontActivity extends AppCompatActivity implements TextToSpeech.OnI
 //		notificationManager.notify(12, builder.build());
 //	}
 
-	private void loadModel() {
-
-		new Thread(new Runnable() {
-			@Override
-			public void run() {
-				try {
-					classifier = TensorFlowClassifier.create(getAssets(), "CNN",
-							"opt_em_convnet_5000.pb", "labels.txt", PIXEL_WIDTH,
-							"input", "output_50", true, 7);
-
-				} catch (final Exception e) {
-					//if they aren't found, throw an error!
-					throw new RuntimeException("Error initializing classifiers!", e);
-				}
-			}
-		}).start();
-	}
-
 	@SuppressWarnings( "deprecation" )
 	@Override
 	public void surfaceChanged(SurfaceHolder holder, int format, int w, int h) {
@@ -730,42 +707,6 @@ public class FrontActivity extends AppCompatActivity implements TextToSpeech.OnI
 			System.out.println(normalized_pixels);
 			Log.d("pixel_values", String.valueOf(normalized_pixels));
 			String text = null;
-
-			try {
-				final Classification res = classifier.recognize(normalized_pixels);
-				//if it can't classify, output a question mark
-				if (res.getLabel() == null) {
-					text = "Status: " + ": ?\n";
-				} else {
-					//else output its name
-					text = String.format("%s: %s, %f\n", "Status: ", res.getLabel(),
-							res.getConf());
-					final DatabaseReference myRef = FirebaseDatabase.getInstance().getReference("users/" + MOB_NUMBER);
-					myRef.addListenerForSingleValueEvent(new ValueEventListener() {
-						@Override
-						public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-							Users user = dataSnapshot.getValue(Users.class);
-							assert user != null;
-//							ArrayList<String> emo = user.getEmotions();
-//							emo.add(res.getLabel());
-//							user.setEmotions(emo);
-//							myRef.setValue(user);
-						}
-
-						@Override
-						public void onCancelled(@NonNull DatabaseError databaseError) {
-
-						}
-					});
-				}
-			} catch (Exception e) {
-				System.out.print("Exception:" + e.toString());
-
-			} finally {
-				mCamera.stopPreview();
-				mCamera.release();
-				mCamera = null;
-			}
 
 			Toast.makeText(FrontActivity.this, text, Toast.LENGTH_LONG).show();
 		}
