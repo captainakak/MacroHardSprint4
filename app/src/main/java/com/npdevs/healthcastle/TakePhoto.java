@@ -50,8 +50,8 @@ import androidx.core.content.FileProvider;
 
 
 public class TakePhoto extends AppCompatActivity {
-
-    private Button takePicture;
+    public String food, CD;
+    private Button takePicture, record;
     private ImageView imageView;
     private Uri imageFile;
     private ListView foodListView;
@@ -71,6 +71,7 @@ public class TakePhoto extends AppCompatActivity {
 
 
         takePicture = (Button) findViewById(R.id.button_image);
+        record = findViewById(R.id.record);
         imageView = (ImageView) findViewById(R.id.imageView);
         foodListView = (ListView) findViewById(R.id.foodListView);
 
@@ -80,7 +81,18 @@ public class TakePhoto extends AppCompatActivity {
                 takePicture(v);
             }
         });
-
+        record.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TakePhoto.this, AddPictureFood.class);
+                String str = mFoodData.get(mFoodData.size()-3).get("col_1");
+                String[] split = str.split(":");
+                String[] split2 = split[1].split(" ");
+                intent.putExtra("Food", split[0]);
+                intent.putExtra("CD", split2[0]);
+                startActivity(intent);
+            }
+        });
         mFoodData = JSONUtil.getInitalListData();
 
         // create the grid item mapping
@@ -92,6 +104,8 @@ public class TakePhoto extends AppCompatActivity {
 
         listView.setAdapter(simpleAdapter);
     }
+
+
 
     // using intent to take a picture with existing camera app on the phone
     public void takePicture(View view) {
@@ -289,15 +303,6 @@ class FoodRecognitionTask extends AsyncTask<FoodTask,Void,String> {
     }
 }
 
-interface FoodServiceCallback<T> {
-
-    /**
-     * Indicates that the upload operation has finished. This method is called even if the
-     * upload hasn't completed successfully.
-     */
-    void finishRecognition(JSONObject response, FoodRecognitionException exception);
-}
-
 class FoodTask {
 
     private Bitmap image;
@@ -449,7 +454,7 @@ class ImageUtil {
 }
 
 class JSONUtil {
-
+    String cd = null, food = null;
 
     public static List<Map<String,String>> getInitalListData() {
         List<Map<String, String>> list = new ArrayList<>();
@@ -458,12 +463,11 @@ class JSONUtil {
     }
 
     public static void foodJsonToList(JSONObject response, List<Map<String, String>> list) {
-
         list.clear();
 
         if (response != null) {
             JSONArray results = response.optJSONArray("results");
-            for (int i=0; i<results.length(); i++) {
+            for (int i=0; i<Math.min(results.length(), 4); i++) {
                 JSONObject result = results.optJSONObject(i);
                 JSONArray items = result.optJSONArray("items");
                 for (int j=0; j<items.length(); j++) {
@@ -471,7 +475,8 @@ class JSONUtil {
                     String itemName = item.optString("name","");
                     JSONObject nutrition = item.optJSONObject("nutrition");
                     int calories = nutrition.optInt("calories");
-                    list.add(createItem(itemName + " (" + calories + " Cal)", ""));
+                    list.add(createItem(itemName + ":" + calories/10 + " Cal/100g", ""));
+
                 }
             }
         }
@@ -483,5 +488,23 @@ class JSONUtil {
         item.put("col_2", calories);
         return item;
     }
+    private static Map<String,String> createItem2(String foodName, String calories) {
+        Map<String,String>  item =  new HashMap<>();
+        String[] split = foodName.split(":");
+        String[] split2 = split[1].split(" ");
+        item.put("name", split[0]);
+        item.put("calorie", split2[0]);
+        return item;
+    }
 
+}
+
+
+interface FoodServiceCallback<T> {
+
+    /**
+     * Indicates that the upload operation has finished. This method is called even if the
+     * upload hasn't completed successfully.
+     */
+    void finishRecognition(JSONObject response, FoodRecognitionException exception);
 }

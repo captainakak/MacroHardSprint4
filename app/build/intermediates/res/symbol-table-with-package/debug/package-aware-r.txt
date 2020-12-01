@@ -1622,6 +1622,7 @@ id editText12
 id editText13
 id editText14
 id editText15
+id editText16
 id editText2
 id editText3
 id editText4
@@ -1753,6 +1754,7 @@ id preview
 id progress_circular
 id progress_horizontal
 id radio
+id record
 id recyclerview
 id right
 id right_icon
@@ -1844,9 +1846,11 @@ id textView24
 id textView25
 id textView26
 id textView27
+id textView28
 id textView29
 id textView3
 id textView30
+id textView31
 id textView4
 id textView5
 id textView6
@@ -1957,6 +1961,7 @@ layout activity_add_food
 layout activity_add_food_search
 layout activity_add_new_exercise
 layout activity_add_new_food
+layout activity_add_picture_food
 layout activity_bloodpressure_measure
 layout activity_calorie_graph
 layout activity_check_safe

@@ -42,7 +42,7 @@ public class AddExercise extends AppCompatActivity {
 						int prev = 0;
 						prev = Integer.parseInt(test);
 						ans = ans + prev;
-						//clearTable();
+						clearTable();
 						saveTable(ans + "");
 						Toast.makeText(getApplicationContext(), ans + "", Toast.LENGTH_SHORT).show();
 						finish();

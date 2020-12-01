@@ -54,7 +54,8 @@
         <activity android:name=".ResPwdActivity"/>
         <activity android:name=".RegistActivity"/>
         <activity android:name=".TakePhoto"/>
-        <activity android:name=".LoginActivity">
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".AddPictureFood">
 
         </activity>
 

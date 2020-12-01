@@ -1,27 +1,16 @@
 package com.npdevs.healthcastle;
 
-import android.app.NotificationChannel;
-import android.app.NotificationManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.Canvas;
-import android.graphics.ColorMatrix;
-import android.graphics.ColorMatrixColorFilter;
-import android.graphics.Matrix;
-import android.graphics.Paint;
-import android.graphics.drawable.BitmapDrawable;
 import android.hardware.Camera;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
 import android.speech.RecognizerIntent;
 import android.speech.tts.TextToSpeech;
 import android.speech.tts.TextToSpeech.*;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
@@ -30,30 +19,15 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.NotificationCompat;
-import androidx.core.app.NotificationManagerCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
-
 import com.google.android.material.navigation.NavigationView;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
-import com.npdevs.healthcastle.predictivemodels.Classification;
-
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Locale;
 
-public class FrontActivity extends AppCompatActivity implements OnInitListener {
-	static final int PIXEL_WIDTH = 48;
+public class FrontActivity extends AppCompatActivity {
 	private static boolean FIRST_TIME = true;
 	boolean running = false;
 	String[] activites = new String[]{"Weight Lifting: general", "Weight Lifting: vigorous", "Bicycling, Stationary: moderate", "Rowing, Stationary: moderate", "Bicycling, Stationary: vigorous", "Dancing: slow, waltz, foxtrot", "Volleyball: non-competitive, general play", "Walking: 3.5 mph", "Dancing: disco, ballroom, square", "Soccer: general", "Tennis: general", "Swimming: backstroke", "Running: 5.2 mph", "Bicycling: 14-15.9 mph", "Digging", "Chopping & splitting wood", "Sleeping", "Cooking", "Auto Repair", "Paint house: outside", "Computer Work", "Welding", "Coaching Sports", "Sitting in Class"};
@@ -61,11 +35,6 @@ public class FrontActivity extends AppCompatActivity implements OnInitListener {
 	ImageView iv_image;
 	SurfaceView sv;
 	SurfaceHolder sHolder;
-	@SuppressWarnings( "deprecation" )
-	Camera mCamera;
-	@SuppressWarnings( "deprecation" )
-	Camera.Parameters parameters;
-	Bitmap bmp;
 	private TextView maxCalorie, consumedCalorie, burntCalorie, allowedCalorie, steps;
 	private Button checkSafe, addFood, addExercise, takePhoto;
 	private DatabaseHelper databaseHelper;
@@ -183,15 +152,11 @@ public class FrontActivity extends AppCompatActivity implements OnInitListener {
 //						intent.putExtra("MOB_NUMBER", MOB_NUMBER);
 //						startActivity(intent);
 //						return true;
-//					case R.id.doctors:
-//						intent = new Intent(FrontActivity.this, Friends.class);
-//						intent.putExtra("MOB", MOB_NUMBER);
-//						startActivity(intent);
-//						return true;
+
 					case R.id.logout:
 						Toast.makeText(FrontActivity.this, "Logged out", Toast.LENGTH_SHORT).show();
 						clearTable();
-						saveTable();
+						//saveTable();
 						Intent intent = new Intent(FrontActivity.this, MainActivity.class);
 						startActivity(intent);
 						finish();
@@ -220,8 +185,6 @@ public class FrontActivity extends AppCompatActivity implements OnInitListener {
 			}
 
 		});
-
-		textToSpeech = new TextToSpeech(this, this);
 
 //		Button button = findViewById(R.id.button2);
 //
@@ -273,15 +236,8 @@ public class FrontActivity extends AppCompatActivity implements OnInitListener {
 				databaseHelper.insertData(categorties[i], measure[i], calories[i]);
 			}
 		}
-		checkSafe.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View view) {
-				openCheckSafeActivity();
-			}
-		});
 		databaseHelper2 = new DatabaseHelper2(this);
 		Cursor res2 = databaseHelper2.getAllData();
-		//Log.e("ch",res2.getCount()+"");
 		if (res2.getCount() == 0) {
 			int size = activites.length;
 			for (int i = 0; i < size; i++) {
@@ -339,9 +295,29 @@ public class FrontActivity extends AppCompatActivity implements OnInitListener {
 	}
 
 	private void saveTable() {
-		SharedPreferences sharedPreferences = getSharedPreferences("usersave", MODE_PRIVATE);
+		SharedPreferences sharedPreferences = getSharedPreferences("food", MODE_PRIVATE);
 		SharedPreferences.Editor editor = sharedPreferences.edit();
 		editor.putString("User", "no");
+		editor.apply();
+	}
+	private void saveTable(String ans) {
+		SharedPreferences sharedPreferences = getSharedPreferences("food", MODE_PRIVATE);
+		SharedPreferences.Editor editor = sharedPreferences.edit();
+		editor.putString("burnt", ans);
+		editor.apply();
+	}
+
+	private void saveTable1(String ans) {
+		SharedPreferences sharedPreferences = getSharedPreferences("food", MODE_PRIVATE);
+		SharedPreferences.Editor editor = sharedPreferences.edit();
+		editor.putString("steps", ans);
+		editor.apply();
+	}
+
+	private void saveTable2(String ans) {
+		SharedPreferences sharedPreferences = getSharedPreferences("food", MODE_PRIVATE);
+		SharedPreferences.Editor editor = sharedPreferences.edit();
+		editor.putString("allowed", ans);
 		editor.apply();
 	}
 	private void openTakePhotoActivity() {
@@ -349,20 +325,6 @@ public class FrontActivity extends AppCompatActivity implements OnInitListener {
 		startActivity(intent);
 	}
 
-//	private void schedulealarm() {
-//
-//		// Construct an intent that will execute the AlarmReceiver
-//		Intent intent = new Intent(this, AlarmReciever.class);
-//		// Create a PendingIntent to be triggered when the alarm goes off
-//		final PendingIntent pIntent = PendingIntent.getBroadcast(this, AlarmReciever.REQUEST_CODE,
-//				intent, PendingIntent.FLAG_UPDATE_CURRENT);
-//		// Setup periodic alarm every every half hour from this point onwards
-//		AlarmManager alarm = (AlarmManager) this.getSystemService(Context.ALARM_SERVICE);
-//		// First parameter is the type: ELAPSED_REALTIME, ELAPSED_REALTIME_WAKEUP, RTC_WAKEUP
-//		// Interval can be INTERVAL_FIFTEEN_MINUTES, INTERVAL_HALF_HOUR, INTERVAL_HOUR, INTERVAL_DAY
-//		alarm.setInexactRepeating(AlarmManager.RTC_WAKEUP, SystemClock.elapsedRealtime(),
-//				1000 * 29 * 60, pIntent);
-//	}
 
 	private String readHeartbeat() {
 		SharedPreferences sharedPreferences = getSharedPreferences("heartbeats", MODE_PRIVATE);
@@ -419,92 +381,42 @@ public class FrontActivity extends AppCompatActivity implements OnInitListener {
 		running = false;
 	}
 
-	private void saveTable(String ans) {
-		SharedPreferences sharedPreferences = getSharedPreferences("food", MODE_PRIVATE);
-		SharedPreferences.Editor editor = sharedPreferences.edit();
-		editor.putString("burnt", ans);
-		editor.apply();
-	}
 
-	private void saveTable1(String ans) {
-		SharedPreferences sharedPreferences = getSharedPreferences("food", MODE_PRIVATE);
-		SharedPreferences.Editor editor = sharedPreferences.edit();
-		editor.putString("steps", ans);
-		editor.apply();
-	}
-
-	private void saveTable2(String ans) {
-		SharedPreferences sharedPreferences = getSharedPreferences("food", MODE_PRIVATE);
-		SharedPreferences.Editor editor = sharedPreferences.edit();
-		editor.putString("allowed", ans);
-		editor.apply();
-	}
-
-	@Override
-	public void onInit(int i) {
-
-	}
-
-	@Override
-	protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-		super.onActivityResult(requestCode, resultCode, data);
-
-		if (resultCode == RESULT_OK && data != null) {
-			getWorkDoneFromResult(data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS));
-		} else {
-			Toast.makeText(getApplicationContext(), "Failed to recognize speech!", Toast.LENGTH_LONG).show();
-		}
-	}
-
-	private void getWorkDoneFromResult(ArrayList<String> stringArrayListExtra) {
-		for (String str : stringArrayListExtra) {
-			if (str.toLowerCase().contains("add food")) {
-				Intent intent = new Intent(FrontActivity.this, AddFoodSearch.class);
-				try {
-					intent.putExtra("SEARCH", str.substring(str.lastIndexOf("add food") + 9).trim());
-				} catch (Exception e) {
-					intent.putExtra("SEARCH", "");
-				}
-				startActivity(intent);
-				break;
-			}
-			if (str.toLowerCase().contains("add exercise")) {
-				Intent intent = new Intent(FrontActivity.this, AddExerciseSearch.class);
-				try {
-					intent.putExtra("SEARCH", str.substring(str.lastIndexOf("add exercise") + 13).trim());
-				} catch (Exception e) {
-					intent.putExtra("SEARCH", "");
-				}
-				startActivity(intent);
-				break;
-			}
-
-
-
-		}
-	}
-
-	private void speak(String string) {
-		textToSpeech.speak(String.valueOf(string), TextToSpeech.QUEUE_ADD, null);
-	}
-
-	private void createNotificationChannel() {
-		// Create the NotificationChannel, but only on API 26+ because
-		// the NotificationChannel class is new and not in the support library
-		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-			//CharSequence name = getString(R.string.channel_name);
-			//String description = getString(R.string.channel_description);
-			int importance = NotificationManager.IMPORTANCE_HIGH;
-			NotificationChannel channel = new NotificationChannel("Unhealthy person notify", "Unhealthy person notify", importance);
-			//channel.setDescription(description);
-			channel.enableVibration(true);
-			channel.enableLights(true);
-			// Register the channel with the system; you can't change the importance
-			// or other notification behaviors after this
-			NotificationManager notificationManager = getSystemService(NotificationManager.class);
-			notificationManager.createNotificationChannel(channel);
-		}
-	}
+//	@Override
+//	protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+//		super.onActivityResult(requestCode, resultCode, data);
+//
+//		if (resultCode == RESULT_OK && data != null) {
+//			getWorkDoneFromResult(data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS));
+//		} else {
+//			Toast.makeText(getApplicationContext(), "Failed to recognize speech!", Toast.LENGTH_LONG).show();
+//		}
+//	}
+//
+//	private void getWorkDoneFromResult(ArrayList<String> stringArrayListExtra) {
+//		for (String str : stringArrayListExtra) {
+//			if (str.toLowerCase().contains("add food")) {
+//				Intent intent = new Intent(FrontActivity.this, AddFoodSearch.class);
+//				try {
+//					intent.putExtra("SEARCH", str.substring(str.lastIndexOf("add food") + 9).trim());
+//				} catch (Exception e) {
+//					intent.putExtra("SEARCH", "");
+//				}
+//				startActivity(intent);
+//				break;
+//			}
+//			if (str.toLowerCase().contains("add exercise")) {
+//				Intent intent = new Intent(FrontActivity.this, AddExerciseSearch.class);
+//				try {
+//					intent.putExtra("SEARCH", str.substring(str.lastIndexOf("add exercise") + 13).trim());
+//				} catch (Exception e) {
+//					intent.putExtra("SEARCH", "");
+//				}
+//				startActivity(intent);
+//				break;
+//			}
+//		}
+//	}
 
 	@SuppressWarnings( "deprecation" )
 	int getFrontCameraId() {
@@ -516,52 +428,4 @@ public class FrontActivity extends AppCompatActivity implements OnInitListener {
 		return -1; // No front-facing camera found
 	}
 
-	@SuppressWarnings( "deprecation" )
-	public void surfaceCreated(SurfaceHolder holder) {
-		int index = getFrontCameraId();
-		if (index == -1) {
-//			Toast.makeText(getApplicationContext(), "No front camera", Toast.LENGTH_LONG).show();
-		} else {
-			mCamera = Camera.open(index);
-//			Toast.makeText(getApplicationContext(), "With front camera", Toast.LENGTH_LONG).show();
-		}
-		mCamera = Camera.open(index);
-		try {
-			mCamera.setPreviewDisplay(holder);
-
-		} catch (IOException exception) {
-			mCamera.release();
-			mCamera = null;
-		}
-
-	}
-
-	@SuppressWarnings( "deprecation" )
-	public void surfaceDestroyed(SurfaceHolder holder) {
-		if (mCamera != null) {
-			mCamera.stopPreview();
-			mCamera.release();
-			mCamera = null;
-		}
-	}
-
-	private Bitmap toGrayscale(Bitmap bmpOriginal) {
-		int width, height;
-		height = bmpOriginal.getHeight();
-		width = bmpOriginal.getWidth();
-
-		Bitmap bmpGrayscale = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
-		Canvas c = new Canvas(bmpGrayscale);
-		Paint paint = new Paint();
-		ColorMatrix cm = new ColorMatrix();
-		cm.setSaturation(0);
-		ColorMatrixColorFilter f = new ColorMatrixColorFilter(cm);
-		paint.setColorFilter(f);
-		c.drawBitmap(bmpOriginal, 0, 0, paint);
-		return bmpGrayscale;
-	}
-
-	private Bitmap getResizedBitmap(Bitmap image, int bitmapWidth, int bitmapHeight) {
-		return Bitmap.createScaledBitmap(image, bitmapWidth, bitmapHeight, true);
-	}
 }

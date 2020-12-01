@@ -812,6 +812,10 @@
         "source": "/Users/chenjiayu/.gradle/caches/transforms-2/files-2.1/3e2ff110dde51de247983aaef5104c67/appcompat-1.1.0/res/drawable-watch-v20/abc_dialog_material_background.xml"
     },
     {
+        "merged": "/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/build/intermediates/res/merged/debug/layout_activity_add_picture_food.xml.flat",
+        "source": "/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/src/main/res/layout/activity_add_picture_food.xml"
+    },
+    {
         "merged": "/Users/chenjiayu/Desktop/8803mobile/MacroHardSprint4/app/build/intermediates/res/merged/debug/drawable-v21_abc_dialog_material_background.xml.flat",
         "source": "/Users/chenjiayu/.gradle/caches/transforms-2/files-2.1/3e2ff110dde51de247983aaef5104c67/appcompat-1.1.0/res/drawable-v21/abc_dialog_material_background.xml"
     },
