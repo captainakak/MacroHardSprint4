@@ -169,16 +169,6 @@ public class FrontActivity extends AppCompatActivity {
 						intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/captainakak/MacroHardSprint4"));
 						startActivity(intent);
 						return true;
-					case R.id.sugar:
-						intent = new Intent(FrontActivity.this, SugarMeasure.class);
-						intent.putExtra("MOB_NUMBER", MOB_NUMBER);
-						startActivity(intent);
-						return true;
-//					case R.id.bloodpressure:
-//						intent = new Intent(FrontActivity.this, BloodpressureMeasure.class);
-//						intent.putExtra("MOB_NUMBER", MOB_NUMBER);
-//						startActivity(intent);
-//						return true;
 					default:
 						return true;
 				}
