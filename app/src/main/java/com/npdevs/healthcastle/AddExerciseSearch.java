@@ -95,7 +95,6 @@ public class AddExerciseSearch extends AppCompatActivity {
 			View view = LayoutInflater
 					.from(parent.getContext())
 					.inflate(R.layout.item_main_feature, parent, false);
-
 			return new ViewHolder(view);
 		}
 
