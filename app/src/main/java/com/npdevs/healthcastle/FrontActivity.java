@@ -8,6 +8,7 @@ import android.graphics.Bitmap;
 import android.hardware.Camera;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.speech.RecognizerIntent;
 import android.speech.tts.TextToSpeech;
 import android.speech.tts.TextToSpeech.*;
@@ -97,7 +98,7 @@ public class FrontActivity extends AppCompatActivity {
 		editProfile.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Intent intent = new Intent(FrontActivity.this, EditProfile.class);
+				Intent intent = new Intent(FrontActivity.this, ProfileActivity.class);
 				intent.putExtra("MOB_NUMBER", MOB_NUMBER);
 				startActivity(intent);
 			}
@@ -122,36 +123,7 @@ public class FrontActivity extends AppCompatActivity {
 						Intent intent2 = new Intent(FrontActivity.this, AddNewExercise.class);
 						startActivity(intent2);
 						return true;
-//					case R.id.heartbeatstats:
-//						intent = new Intent(FrontActivity.this, HeartGraph.class);
-//						intent.putExtra("MOB_NUMBER", MOB_NUMBER);
-//						startActivity(intent);
-//						return true;
-//					case R.id.caloriestats:
-//						intent = new Intent(FrontActivity.this, CalorieGraph.class);
-//						intent.putExtra("MOB_NUMBER", MOB_NUMBER);
-//						startActivity(intent);
-//						return true;
-//					case R.id.sugarstats:
-//						intent = new Intent(FrontActivity.this, SugarLevelGraph.class);
-//						intent.putExtra("MOB_NUMBER", MOB_NUMBER);
-//						startActivity(intent);
-//						return true;
-//					case R.id.stepsstats:
-//						intent = new Intent(FrontActivity.this, StepsGraph.class);
-//						intent.putExtra("MOB_NUMBER", MOB_NUMBER);
-//						startActivity(intent);
-//						return true;
-//					case R.id.mobSearch:
-//						intent = new Intent(FrontActivity.this, PhoneSearch.class);
-//						intent.putExtra("MOB_NUMBER", MOB_NUMBER);
-//						startActivity(intent);
-//						return true;
-//					case R.id.connection:
-//						intent = new Intent(FrontActivity.this, Connections.class);
-//						intent.putExtra("MOB_NUMBER", MOB_NUMBER);
-//						startActivity(intent);
-//						return true;
+
 
 					case R.id.logout:
 						Toast.makeText(FrontActivity.this, "Logged out", Toast.LENGTH_SHORT).show();
@@ -186,17 +158,7 @@ public class FrontActivity extends AppCompatActivity {
 
 		});
 
-//		Button button = findViewById(R.id.button2);
-//
-//		button.setOnClickListener(new View.OnClickListener() {
-//			@Override
-//			public void onClick(View v) {
-//				Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
-//				intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
-//				intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.ENGLISH);
-//				startActivityForResult(intent, 10);
-//			}
-//		});
+
 
 		maxCalorie = findViewById(R.id.textView30);
 		consumedCalorie = findViewById(R.id.textView4);
@@ -382,41 +344,7 @@ public class FrontActivity extends AppCompatActivity {
 	}
 
 
-//	@Override
-//	protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-//		super.onActivityResult(requestCode, resultCode, data);
-//
-//		if (resultCode == RESULT_OK && data != null) {
-//			getWorkDoneFromResult(data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS));
-//		} else {
-//			Toast.makeText(getApplicationContext(), "Failed to recognize speech!", Toast.LENGTH_LONG).show();
-//		}
-//	}
-//
-//	private void getWorkDoneFromResult(ArrayList<String> stringArrayListExtra) {
-//		for (String str : stringArrayListExtra) {
-//			if (str.toLowerCase().contains("add food")) {
-//				Intent intent = new Intent(FrontActivity.this, AddFoodSearch.class);
-//				try {
-//					intent.putExtra("SEARCH", str.substring(str.lastIndexOf("add food") + 9).trim());
-//				} catch (Exception e) {
-//					intent.putExtra("SEARCH", "");
-//				}
-//				startActivity(intent);
-//				break;
-//			}
-//			if (str.toLowerCase().contains("add exercise")) {
-//				Intent intent = new Intent(FrontActivity.this, AddExerciseSearch.class);
-//				try {
-//					intent.putExtra("SEARCH", str.substring(str.lastIndexOf("add exercise") + 13).trim());
-//				} catch (Exception e) {
-//					intent.putExtra("SEARCH", "");
-//				}
-//				startActivity(intent);
-//				break;
-//			}
-//		}
-//	}
+
 
 	@SuppressWarnings( "deprecation" )
 	int getFrontCameraId() {

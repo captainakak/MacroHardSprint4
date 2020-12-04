@@ -48,6 +48,7 @@
         <activity android:name=".About" />
         <activity android:name=".CheckSafe" />
         <activity android:name=".FrontActivity" />
+        <activity android:name=".FrontActivity2" />
         <activity android:name=".SignUp" />
         <activity android:name=".MainActivity"/>
         <activity android:name=".ProfileActivity"/>

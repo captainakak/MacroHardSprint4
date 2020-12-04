@@ -18,6 +18,7 @@ public class ProfileActivity extends AppCompatActivity {
 
     private Button btnLogin;
     private Button btnProfile;
+    private Button skipfornow;
     private FirebaseAuth mAuth;
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,7 @@ public class ProfileActivity extends AppCompatActivity {
 
         btnLogin = (Button) findViewById(R.id.btnLogin);
         btnProfile = (Button) findViewById(R.id.btnConfirmProfile);
+        skipfornow = (Button) findViewById(R.id.skipfornow);
         // ...
         // Initialize Firebase Auth
         mAuth = FirebaseAuth.getInstance();
@@ -34,6 +36,12 @@ public class ProfileActivity extends AppCompatActivity {
 
     public void ProfileJump(View v) {
         Intent intent = new Intent(ProfileActivity.this, FrontActivity.class);
+        //intent.putExtra("info", "No66778899");
+        ProfileActivity.this.startActivity(intent);
+    }
+
+    public void Skipfornow(View v) {
+        Intent intent = new Intent(ProfileActivity.this, FrontActivity2.class);
         //intent.putExtra("info", "No66778899");
         ProfileActivity.this.startActivity(intent);
     }

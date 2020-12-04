@@ -65,7 +65,7 @@ public class LoginActivity extends AppCompatActivity {
 
     public void OnMyLoginClick(View v) {
         if (pubFun.isEmpty(editPhone.getText().toString()) || pubFun.isEmpty(editPwd.getText().toString())) {
-            Toast.makeText(this, "手机号或密码不能为空！", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Phone number missing", Toast.LENGTH_SHORT).show();
             return;
         }
 

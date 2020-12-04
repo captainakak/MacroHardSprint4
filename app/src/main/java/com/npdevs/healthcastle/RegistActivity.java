@@ -52,49 +52,7 @@ public class RegistActivity extends AppCompatActivity {
     public void OnMyRegistClick(View v)
     {
         boolean isTrue = true;
-//<<<<<<< Updated upstream
-//        if(pubFun.isPhoneNumberValid(editPhone.getText().toString()) == false){
-//            isTrue = false;
-//            Toast.makeText(this, "手机号格式不正确！", Toast.LENGTH_SHORT).show();
-//            return;
-//        }
-//        if(pubFun.isEmpty(editPwd.getText().toString())){
-//            isTrue = false;
-//            Toast.makeText(this, "密码不能为空！", Toast.LENGTH_SHORT).show();
-//            return;
-//        }
 
-//        if(isTrue = true){
-//            //call DBOpenHelper
-//            DBOpenHelper helper = new DBOpenHelper(this,"qianbao.db",null,1);
-//            SQLiteDatabase db = helper.getWritableDatabase();
-//            Cursor c = db.query("user_tb",null,"userID=?",new String[]{editPhone.getText().toString()},null,null,null);
-//            if(c!=null && c.getCount() >= 1){
-//                Toast.makeText(this, "该用户已存在", Toast.LENGTH_SHORT).show();
-//                c.close();
-//            }
-//            else{
-//                //insert data
-//                ContentValues values= new ContentValues();
-//                values.put("userID",editPhone.getText().toString());
-//                values.put("pwd",editPwd.getText().toString());
-//                long rowid = db.insert("user_tb",null,values);
-//
-//                Toast.makeText(this, "注册成功", Toast.LENGTH_SHORT).show();
-//                this.finish();
-//            }
-//            db.close();
-//=======
-//        if(pubFun.isPhoneNumberValid(editPhone.getText().toString()) == false){
-//            isTrue = false;
-//            Toast.makeText(this, "Invalid Phone number!", Toast.LENGTH_SHORT).show();
-//            return;
-//        }
-//        if(pubFun.isEmpty(editPwd.getText().toString())){
-//            isTrue = false;
-//            Toast.makeText(this, "Please enter password!", Toast.LENGTH_SHORT).show();
-//            return;
-//        }
 
         if(isTrue = true){
             //call DBOpenHelper

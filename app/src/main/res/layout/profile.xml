@@ -107,4 +107,18 @@
         android:textSize="18sp"
         app:strokeColor="@color/blue"
         app:strokeWidth="2.5dp" />
+
+    <Button
+        android:id="@+id/skipfornow"
+        style="@style/textstyle"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mybutton"
+        android:onClick="Skipfornow"
+        android:text="Skip For Now"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="18sp"
+        app:strokeColor="@color/blue"
+        app:strokeWidth="2.5dp" />
 </LinearLayout>
