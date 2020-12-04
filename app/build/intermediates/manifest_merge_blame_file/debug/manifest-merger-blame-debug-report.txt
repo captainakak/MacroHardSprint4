@@ -64,7 +64,7 @@
 33    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 34
 35    <application
-35-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:25:5-73:19
+35-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:25:5-72:19
 36        android:allowBackup="true"
 36-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:26:9-35
 37        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -95,144 +95,141 @@
 49-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:36:27-74
 50            </intent-filter>
 51        </activity>
-52        <activity android:name="com.npdevs.healthcastle.SugarMeasure" />
-52-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:39:9-50
-52-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:39:19-47
-53        <activity android:name="com.npdevs.healthcastle.EditProfile" />
-53-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:40:9-49
-53-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:40:19-46
-54        <activity android:name="com.npdevs.healthcastle.AddNewExercise" />
-54-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:41:9-52
-54-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:41:19-49
-55        <activity android:name="com.npdevs.healthcastle.AddNewFood" />
-55-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:42:9-48
-55-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:42:19-45
-56        <activity android:name="com.npdevs.healthcastle.CheckSafeSearch" />
-56-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:43:9-53
-56-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:43:19-50
-57        <activity android:name="com.npdevs.healthcastle.AddFoodSearch" />
-57-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:44:9-51
-57-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:44:19-48
-58        <activity android:name="com.npdevs.healthcastle.AddFood" />
-58-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:45:9-45
-58-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:45:19-42
-59        <activity android:name="com.npdevs.healthcastle.AddExerciseSearch" />
-59-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:46:9-55
-59-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:46:19-52
-60        <activity android:name="com.npdevs.healthcastle.AddExercise" />
-60-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:47:9-49
-60-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:47:19-46
-61        <activity android:name="com.npdevs.healthcastle.About" />
-61-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:48:9-43
-61-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:48:19-40
-62        <activity android:name="com.npdevs.healthcastle.CheckSafe" />
-62-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:49:9-47
-62-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:49:19-44
-63        <activity android:name="com.npdevs.healthcastle.FrontActivity" />
-63-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:50:9-51
-63-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:50:19-48
-64        <activity android:name="com.npdevs.healthcastle.FrontActivity2" />
-64-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:51:9-52
-64-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:51:19-49
-65        <activity android:name="com.npdevs.healthcastle.SignUp" />
-65-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:52:9-44
-65-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:52:19-41
-66        <activity android:name="com.npdevs.healthcastle.MainActivity" />
-66-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:53:9-49
-66-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:53:19-47
-67        <activity android:name="com.npdevs.healthcastle.ProfileActivity" />
-67-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:54:9-52
-67-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:54:19-50
-68        <activity android:name="com.npdevs.healthcastle.ResPwdActivity" />
+52        <activity android:name="com.npdevs.healthcastle.EditProfile" />
+52-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:39:9-49
+52-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:39:19-46
+53        <activity android:name="com.npdevs.healthcastle.AddNewExercise" />
+53-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:40:9-52
+53-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:40:19-49
+54        <activity android:name="com.npdevs.healthcastle.AddNewFood" />
+54-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:41:9-48
+54-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:41:19-45
+55        <activity android:name="com.npdevs.healthcastle.CheckSafeSearch" />
+55-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:42:9-53
+55-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:42:19-50
+56        <activity android:name="com.npdevs.healthcastle.AddFoodSearch" />
+56-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:43:9-51
+56-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:43:19-48
+57        <activity android:name="com.npdevs.healthcastle.AddFood" />
+57-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:44:9-45
+57-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:44:19-42
+58        <activity android:name="com.npdevs.healthcastle.AddExerciseSearch" />
+58-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:45:9-55
+58-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:45:19-52
+59        <activity android:name="com.npdevs.healthcastle.AddExercise" />
+59-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:46:9-49
+59-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:46:19-46
+60        <activity android:name="com.npdevs.healthcastle.About" />
+60-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:47:9-43
+60-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:47:19-40
+61        <activity android:name="com.npdevs.healthcastle.CheckSafe" />
+61-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:48:9-47
+61-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:48:19-44
+62        <activity android:name="com.npdevs.healthcastle.FrontActivity" />
+62-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:49:9-51
+62-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:49:19-48
+63        <activity android:name="com.npdevs.healthcastle.FrontActivity2" />
+63-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:50:9-52
+63-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:50:19-49
+64        <activity android:name="com.npdevs.healthcastle.SignUp" />
+64-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:51:9-44
+64-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:51:19-41
+65        <activity android:name="com.npdevs.healthcastle.MainActivity" />
+65-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:52:9-49
+65-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:52:19-47
+66        <activity android:name="com.npdevs.healthcastle.ProfileActivity" />
+66-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:53:9-52
+66-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:53:19-50
+67        <activity android:name="com.npdevs.healthcastle.ResPwdActivity" />
+67-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:54:9-51
+67-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:54:19-49
+68        <activity android:name="com.npdevs.healthcastle.RegistActivity" />
 68-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:55:9-51
 68-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:55:19-49
-69        <activity android:name="com.npdevs.healthcastle.RegistActivity" />
-69-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:56:9-51
-69-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:56:19-49
-70        <activity android:name="com.npdevs.healthcastle.TakePhoto" />
-70-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:57:9-46
-70-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:57:19-44
-71        <activity android:name="com.npdevs.healthcastle.LoginActivity" />
-71-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:58:9-50
-71-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:58:19-48
-72        <activity android:name="com.npdevs.healthcastle.AddPictureFood" >
-72-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:59:9-61:20
-72-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:59:19-49
-73        </activity>
-74
-75        <provider
-75-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:63:9-71:20
-76            android:name="androidx.core.content.FileProvider"
-76-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:64:13-62
-77            android:authorities="com.npdevs.healthcastle.fileprovider"
-77-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:65:13-71
-78            android:exported="false"
-78-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:66:13-37
-79            android:grantUriPermissions="true" >
-79-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:67:13-47
-80            <meta-data
-80-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:68:13-70:64
-81                android:name="android.support.FILE_PROVIDER_PATHS"
-81-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:69:17-67
-82                android:resource="@xml/file_paths" />
-82-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:70:17-51
-83        </provider>
-84
-85        <activity
-85-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:24:9-31:50
-86            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
-86-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:25:13-85
-87            android:excludeFromRecents="true"
-87-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:26:13-46
-88            android:exported="true"
-88-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:27:13-36
-89            android:launchMode="singleTask"
-89-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:28:13-44
-90            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
-90-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:29:13-102
-91            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-91-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:30:13-72
-92
-93        <service
-93-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:33:9-39:19
-94            android:name="com.google.firebase.components.ComponentDiscoveryService"
-94-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:34:13-84
-95            android:exported="false" >
-95-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:35:13-37
-96            <meta-data
-96-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:36:13-38:85
-97                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-97-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:37:17-109
-98                android:value="com.google.firebase.components.ComponentRegistrar" />
-98-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:38:17-82
-99        </service>
-100
-101        <activity
-101-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\bb2ebc9c39e91c810ab6f069d5c1fa45\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
-102            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-102-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\bb2ebc9c39e91c810ab6f069d5c1fa45\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
-103            android:exported="false"
-103-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\bb2ebc9c39e91c810ab6f069d5c1fa45\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
-104            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-104-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\bb2ebc9c39e91c810ab6f069d5c1fa45\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
-105
-106        <provider
-106-->[com.google.firebase:firebase-common:16.0.3] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\bc7e6160d3d297fa4db63ec5861c586a\jetified-firebase-common-16.0.3\AndroidManifest.xml:10:9-14:39
-107            android:name="com.google.firebase.provider.FirebaseInitProvider"
-107-->[com.google.firebase:firebase-common:16.0.3] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\bc7e6160d3d297fa4db63ec5861c586a\jetified-firebase-common-16.0.3\AndroidManifest.xml:11:13-77
-108            android:authorities="com.npdevs.healthcastle.firebaseinitprovider"
-108-->[com.google.firebase:firebase-common:16.0.3] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\bc7e6160d3d297fa4db63ec5861c586a\jetified-firebase-common-16.0.3\AndroidManifest.xml:12:13-72
-109            android:exported="false"
-109-->[com.google.firebase:firebase-common:16.0.3] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\bc7e6160d3d297fa4db63ec5861c586a\jetified-firebase-common-16.0.3\AndroidManifest.xml:13:13-37
-110            android:initOrder="100" />
-110-->[com.google.firebase:firebase-common:16.0.3] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\bc7e6160d3d297fa4db63ec5861c586a\jetified-firebase-common-16.0.3\AndroidManifest.xml:14:13-36
-111
-112        <meta-data
-112-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\33c2b446ac12bf14a756909f5f5a47ea\jetified-play-services-basement-16.1.0\AndroidManifest.xml:23:9-25:69
-113            android:name="com.google.android.gms.version"
-113-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\33c2b446ac12bf14a756909f5f5a47ea\jetified-play-services-basement-16.1.0\AndroidManifest.xml:24:13-58
-114            android:value="@integer/google_play_services_version" />
-114-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\33c2b446ac12bf14a756909f5f5a47ea\jetified-play-services-basement-16.1.0\AndroidManifest.xml:25:13-66
-115    </application>
-116
-117</manifest>
+69        <activity android:name="com.npdevs.healthcastle.TakePhoto" />
+69-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:56:9-46
+69-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:56:19-44
+70        <activity android:name="com.npdevs.healthcastle.LoginActivity" />
+70-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:57:9-50
+70-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:57:19-48
+71        <activity android:name="com.npdevs.healthcastle.AddPictureFood" >
+71-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:58:9-60:20
+71-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:58:19-49
+72        </activity>
+73
+74        <provider
+74-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:62:9-70:20
+75            android:name="androidx.core.content.FileProvider"
+75-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:63:13-62
+76            android:authorities="com.npdevs.healthcastle.fileprovider"
+76-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:64:13-71
+77            android:exported="false"
+77-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:65:13-37
+78            android:grantUriPermissions="true" >
+78-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:66:13-47
+79            <meta-data
+79-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:67:13-69:64
+80                android:name="android.support.FILE_PROVIDER_PATHS"
+80-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:68:17-67
+81                android:resource="@xml/file_paths" />
+81-->D:\1GT\2020 Fall\CS 8813\MacroHardSprint5\app\src\main\AndroidManifest.xml:69:17-51
+82        </provider>
+83
+84        <activity
+84-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:24:9-31:50
+85            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+85-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:25:13-85
+86            android:excludeFromRecents="true"
+86-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:26:13-46
+87            android:exported="true"
+87-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:27:13-36
+88            android:launchMode="singleTask"
+88-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:28:13-44
+89            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+89-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:29:13-102
+90            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+90-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:30:13-72
+91
+92        <service
+92-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:33:9-39:19
+93            android:name="com.google.firebase.components.ComponentDiscoveryService"
+93-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:34:13-84
+94            android:exported="false" >
+94-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:35:13-37
+95            <meta-data
+95-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:36:13-38:85
+96                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+96-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:37:17-109
+97                android:value="com.google.firebase.components.ComponentRegistrar" />
+97-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\0038c8fb737eee70621a6f19512f8c04\jetified-firebase-auth-16.0.5\AndroidManifest.xml:38:17-82
+98        </service>
+99
+100        <activity
+100-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\bb2ebc9c39e91c810ab6f069d5c1fa45\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
+101            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+101-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\bb2ebc9c39e91c810ab6f069d5c1fa45\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
+102            android:exported="false"
+102-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\bb2ebc9c39e91c810ab6f069d5c1fa45\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
+103            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+103-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\bb2ebc9c39e91c810ab6f069d5c1fa45\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
+104
+105        <provider
+105-->[com.google.firebase:firebase-common:16.0.3] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\bc7e6160d3d297fa4db63ec5861c586a\jetified-firebase-common-16.0.3\AndroidManifest.xml:10:9-14:39
+106            android:name="com.google.firebase.provider.FirebaseInitProvider"
+106-->[com.google.firebase:firebase-common:16.0.3] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\bc7e6160d3d297fa4db63ec5861c586a\jetified-firebase-common-16.0.3\AndroidManifest.xml:11:13-77
+107            android:authorities="com.npdevs.healthcastle.firebaseinitprovider"
+107-->[com.google.firebase:firebase-common:16.0.3] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\bc7e6160d3d297fa4db63ec5861c586a\jetified-firebase-common-16.0.3\AndroidManifest.xml:12:13-72
+108            android:exported="false"
+108-->[com.google.firebase:firebase-common:16.0.3] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\bc7e6160d3d297fa4db63ec5861c586a\jetified-firebase-common-16.0.3\AndroidManifest.xml:13:13-37
+109            android:initOrder="100" />
+109-->[com.google.firebase:firebase-common:16.0.3] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\bc7e6160d3d297fa4db63ec5861c586a\jetified-firebase-common-16.0.3\AndroidManifest.xml:14:13-36
+110
+111        <meta-data
+111-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\33c2b446ac12bf14a756909f5f5a47ea\jetified-play-services-basement-16.1.0\AndroidManifest.xml:23:9-25:69
+112            android:name="com.google.android.gms.version"
+112-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\33c2b446ac12bf14a756909f5f5a47ea\jetified-play-services-basement-16.1.0\AndroidManifest.xml:24:13-58
+113            android:value="@integer/google_play_services_version" />
+113-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\zhang\.gradle\caches\transforms-2\files-2.1\33c2b446ac12bf14a756909f5f5a47ea\jetified-play-services-basement-16.1.0\AndroidManifest.xml:25:13-66
+114    </application>
+115
+116</manifest>

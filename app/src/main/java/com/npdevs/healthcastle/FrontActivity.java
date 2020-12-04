@@ -37,7 +37,7 @@ public class FrontActivity extends AppCompatActivity {
 	SurfaceView sv;
 	SurfaceHolder sHolder;
 	private TextView maxCalorie, consumedCalorie, burntCalorie, allowedCalorie, steps;
-	private Button checkSafe, addFood, addExercise, takePhoto;
+	private Button checkSafe, addFood, addExercise, takePhoto, refreshPage;
 	private DatabaseHelper databaseHelper;
 	private DatabaseHelper2 databaseHelper2;
 	private TextToSpeech textToSpeech;
@@ -159,6 +159,7 @@ public class FrontActivity extends AppCompatActivity {
 		addFood = findViewById(R.id.button2);
 		addExercise = findViewById(R.id.button4);
 		takePhoto = findViewById(R.id.button10);
+		refreshPage = findViewById(R.id.button11);
 		databaseHelper = new DatabaseHelper(this);
 		Cursor res = databaseHelper.getAllData();
 		consumedCalorie.setText(loadPreferences("consumed"));
@@ -333,7 +334,11 @@ public class FrontActivity extends AppCompatActivity {
 		running = false;
 	}
 
-
+	public void refreshPage (View v){
+		Intent intent = getIntent();
+		finish();
+		startActivity(intent);
+	}
 
 
 	@SuppressWarnings( "deprecation" )
@@ -347,3 +352,4 @@ public class FrontActivity extends AppCompatActivity {
 	}
 
 }
+
