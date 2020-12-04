@@ -68,6 +68,7 @@
         <activity android:name="com.npdevs.healthcastle.ResPwdActivity" />
         <activity android:name="com.npdevs.healthcastle.RegistActivity" />
         <activity android:name="com.npdevs.healthcastle.TakePhoto" />
+        <activity android:name="com.npdevs.healthcastle.SugarMeasure" />
         <activity android:name="com.npdevs.healthcastle.LoginActivity" />
         <activity android:name="com.npdevs.healthcastle.AddPictureFood" >
         </activity>

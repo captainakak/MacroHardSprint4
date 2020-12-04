@@ -69,6 +69,7 @@ public class FrontActivity extends AppCompatActivity {
 
 		//checkFamilyHealth();
 		FIRST_TIME = true;
+
 		loadUserData();
 
 		int index = getFrontCameraId();
@@ -123,8 +124,6 @@ public class FrontActivity extends AppCompatActivity {
 						Intent intent2 = new Intent(FrontActivity.this, AddNewExercise.class);
 						startActivity(intent2);
 						return true;
-
-
 					case R.id.logout:
 						Toast.makeText(FrontActivity.this, "Logged out", Toast.LENGTH_SHORT).show();
 						clearTable();
@@ -132,6 +131,11 @@ public class FrontActivity extends AppCompatActivity {
 						Intent intent = new Intent(FrontActivity.this, MainActivity.class);
 						startActivity(intent);
 						finish();
+						return true;
+					case R.id.sugar:
+						intent = new Intent(FrontActivity.this, SugarMeasure.class);
+						intent.putExtra("MOB_NUMBER", MOB_NUMBER);
+						startActivity(intent);
 						return true;
 					case R.id.contact:
 						intent = new Intent(FrontActivity.this, About.class);
@@ -316,10 +320,29 @@ public class FrontActivity extends AppCompatActivity {
 //			temp = "0";
 //		sex = Integer.parseInt(temp);
 
-		age = Integer.parseInt("30");
-		height = Integer.parseInt("160");
-		weight = Integer.parseInt("120");
-		sex = Integer.parseInt("1");
+		//setContentView(R.layout.profile);
+//		ProfileActivity profile = new ProfileActivity();
+//
+//		age = profile.getAge();
+//		height = profile.getHeight();
+//		weight = profile.getWeight();
+//		sex = profile.getSex();
+
+		Intent intent = getIntent();
+
+		String ageT = intent.getStringExtra("age");
+		String weightT = intent.getStringExtra("weight");
+		String heightT = intent.getStringExtra("height");
+		String sexT = intent.getStringExtra("sex");
+
+		System.out.println(ageT + "---------------------------------------------------------");
+		System.out.println(heightT + "---------------------------------------------------------");
+		System.out.println(weightT + "---------------------------------------------------------");
+		System.out.println(sexT + "---------------------------------------------------------");
+		age = Integer.parseInt(ageT);
+		height = Integer.parseInt(heightT);
+		weight = Integer.parseInt(weightT);
+		sex = Integer.parseInt(sexT);
 	}
 
 	@Override

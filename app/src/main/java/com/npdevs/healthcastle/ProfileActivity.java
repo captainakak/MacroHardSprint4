@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -21,6 +22,8 @@ public class ProfileActivity extends AppCompatActivity {
     private Button skipfornow;
     private FirebaseAuth mAuth;
 
+    private String age, weight, height, sex;
+
     protected void onCreate(Bundle savedInstanceState) {
         FirebaseApp.initializeApp(this);
         super.onCreate(savedInstanceState);
@@ -32,6 +35,32 @@ public class ProfileActivity extends AppCompatActivity {
         // ...
         // Initialize Firebase Auth
         mAuth = FirebaseAuth.getInstance();
+
+        final TextView ageTemp = (TextView)findViewById(R.id.editAge);
+        final TextView heightTemp = (TextView)findViewById(R.id.editHeight);
+        final TextView weightTemp = (TextView)findViewById(R.id.editWeight);
+        final TextView genderTemp = (TextView)findViewById(R.id.editGender);
+
+        btnProfile.setOnClickListener(
+                new View.OnClickListener()
+                {
+                    public void onClick(View view)
+                    {
+                        age = ageTemp.getText().toString();
+                        height = heightTemp.getText().toString();
+                        weight = weightTemp.getText().toString();
+                        String genderT = genderTemp.getText().toString();
+                        sex = (genderT == "F") ? "1" : "0";
+
+                        Intent myIntent = new Intent(ProfileActivity.this, FrontActivity.class);
+                        myIntent.putExtra("age", age);
+                        myIntent.putExtra("weight", weight);
+                        myIntent.putExtra("height", height);
+                        myIntent.putExtra("sex", sex);
+                        startActivity(myIntent);
+                    }
+                });
+
     }
 
     public void ProfileJump(View v) {
@@ -52,6 +81,7 @@ public class ProfileActivity extends AppCompatActivity {
         FirebaseUser currentUser = mAuth.getCurrentUser();
 
     }
+
 
     /**
      * login event
